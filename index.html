@@ -10049,7 +10049,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20210128130842633" creator="RVO" list="Nederland $:/ControlPanel WarmteAtlas" modified="20210128130906074" modifier="RVO" title="$:/StoryList">
+<div created="20210205083131210" creator="RVO" list="$:/ControlPanel EnergieDataServices WarmteAtlas" modified="20210205085921089" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10752,8 +10752,48 @@ zie [[Athos project|https://athosccus.nl/]]</pre>
 |-1500 tot -4000 | |[[Aardwarmte]] | | | |
 |dieper dan - 4000 | | | [[Aardwarmte:Diep]]| |[[Aardwarmte:Diep]] |</pre>
 </div>
-<div created="20201203110333038" creator="RVO" modified="20201210095623919" modifier="RVO" order="999" tags="Inhoud" title="EnergieDataServices">
-<pre></pre>
+<div created="20201203110333038" creator="RVO" modified="20210205090247639" modifier="RVO" order="999" tags="Inhoud" title="EnergieDataServices">
+<pre> ! Beschrijving van wms en wfs functionaliteiten van Warmteatlas via url te gebruiken in viewers of excel
+
+!!GetCapabilities 
+Onderstaande url geeft de laag namen weer die in de warmteatlas service zitten.
+
+&gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wms?&amp;GetCapabilities 
+
+!!GetMap
+
+Onderstaande url geeft een geografisch beeld weer van de laag naam &quot;GemeenteEnergieCodes&quot;.  EPSG:28892 is de codering van New Amersfoort kaart projectie. EPSG: 4326 is de codering van WGS84 projectie.
+
+&gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wms?&amp;REQUEST=GetMap&amp;SRS=EPSG:28992&amp;BBOX=280000,620000&amp;WIDTH=500&amp;HEIGHT=600&amp;LAYERS=GemeenteEnergieCodes&amp;FORMAT=image/png
+
+!!GetLegend
+
+Onderstaande url geeft de legende van de laag &quot;GemeenteEnergieCodes&quot; weer.
+
+&gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wms?&amp;REQUEST=GetLegendGraphic&amp;GemeenteEnergieCodes&amp;format=png
+
+!!GetAttributes 
+
+Onderstaande url geeft de attributen van de laag  &quot;GemeenteEnergieCodes&quot; weer
+
+&gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wfs?REQUEST=describefeaturetype&amp;version=1.0.0&amp;service=wfs&amp;typename=GemeenteEnergieCodes 
+
+!!Filter
+
+Onderstaande url geeft een filter weer van de laag  &quot;GemeenteEnergieCodes&quot; met filter aantal inwoners &gt; 100000 met output format een csv file die je kan importeren in excel
+&gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wfs?REQUEST=getFeature&amp;version=1.0.0&amp;typeName=GemeenteEnergieCodes&amp;propertyName=GM_NAAM, AANT_INW&amp;cql_Filter=(AANT_INW&gt;100000)&amp;outputFormat=csv
+
+!!Download
+
+Onderstaande url geeft een download zip file met shape en dbf bestanden van de laag naam &quot;GemeenteEnergieCodes&quot;
+
+&gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wfs?REQUEST=getFeature&amp;typeName=GemeenteEnergieCodes&amp;outputformat=SHAPE ZIP
+Andere formats zijn ook mogelijk
+outputformat=CSV heeft alle attributen en een geometrie in wkt format, die gemakkelijk in de lezen zijn in excel, spatialite
+outputformat=GML2
+outputformat=GML3
+outputformat=KML
+outputformat=application/json</pre>
 </div>
 <div changecount="3" created="20170914151500000" creator="RVO" modified="20201210093535573" modifier="RVO" tags="EnergieKentallen" title="EnergieDragers:Emissies&amp;EnergieInhoud" type="text/vnd.tiddlywiki">
 <pre>Voor de nationale monitoring van broeikasgasemissies in het kader van het klimaatverdrag (UNFCCC) en de monitoring op bedrijfsniveau ten behoeve van de Europese CO2-emissiehandel is het voorgeschreven dat er een nationale lijst van gedefinieerde energiedragers en standaard CO2-emissiefactoren is vastgesteld. Deze lijst dient uit te gaan van de IPCC lijst met default CO2-emissiefactoren, maar dient nationale waarden te bevatten waar de nationale
