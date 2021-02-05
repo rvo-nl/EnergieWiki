@@ -10752,7 +10752,7 @@ zie [[Athos project|https://athosccus.nl/]]</pre>
 |-1500 tot -4000 | |[[Aardwarmte]] | | | |
 |dieper dan - 4000 | | | [[Aardwarmte:Diep]]| |[[Aardwarmte:Diep]] |</pre>
 </div>
-<div created="20201203110333038" creator="RVO" modified="20210205090247639" modifier="RVO" order="999" tags="Inhoud" title="EnergieDataServices">
+<div created="20201203110333038" creator="RVO" modified="20210205090407263" modifier="RVO" order="999" tags="Inhoud" title="EnergieDataServices">
 <pre> ! Beschrijving van wms en wfs functionaliteiten van Warmteatlas via url te gebruiken in viewers of excel
 
 !!GetCapabilities 
@@ -10780,14 +10780,15 @@ Onderstaande url geeft de attributen van de laag  &quot;GemeenteEnergieCodes&quo
 
 !!Filter
 
-Onderstaande url geeft een filter weer van de laag  &quot;GemeenteEnergieCodes&quot; met filter aantal inwoners &gt; 100000 met output format een csv file die je kan importeren in excel
+Onderstaande url geeft een filter weer van de laag  &quot;GemeenteEnergieCodes&quot; met filter aantal inwoners &gt; 100000 met output format een csv file die je kan importeren in excel.
+
 &gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wfs?REQUEST=getFeature&amp;version=1.0.0&amp;typeName=GemeenteEnergieCodes&amp;propertyName=GM_NAAM, AANT_INW&amp;cql_Filter=(AANT_INW&gt;100000)&amp;outputFormat=csv
 
 !!Download
 
 Onderstaande url geeft een download zip file met shape en dbf bestanden van de laag naam &quot;GemeenteEnergieCodes&quot;
 
-&gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wfs?REQUEST=getFeature&amp;typeName=GemeenteEnergieCodes&amp;outputformat=SHAPE ZIP
+&gt; https://rvo.b3p.nl/geoserver/WarmteAtlas/wfs?REQUEST=getFeature&amp;typeName=GemeenteEnergieCodes&amp;outputformat=SHAPE-ZIP
 Andere formats zijn ook mogelijk
 outputformat=CSV heeft alle attributen en een geometrie in wkt format, die gemakkelijk in de lezen zijn in excel, spatialite
 outputformat=GML2
