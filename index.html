@@ -269,6 +269,8 @@ Error message and password prompt
 
 <li>ConversieEfficienties</li>
 
+<li>Draft of 'Industrie' by RVO</li>
+
 <li>DuurzaamEnergiePotentieel</li>
 
 <li>EnergieDataServices</li>
@@ -10049,7 +10051,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20210218115149420" creator="RVO" list="Utiliteitsbouw Kassen Glastuinbouw $:/ControlPanel Industrie WarmteAtlas" modified="20210218131244231" modifier="RVO" title="$:/StoryList">
+<div created="20210218115149420" creator="RVO" list="Utiliteitsbouw Kassen Glastuinbouw $:/ControlPanel [[Draft of 'Industrie' by RVO]] WarmteAtlas" modified="20210218131244231" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10740,6 +10742,247 @@ zie [[Athos project|https://athosccus.nl/]]</pre>
 </div>
 <div created="20201207164434361" modified="20201207164501693" tags="EnergieKentallen" title="ConversieEfficienties">
 <pre></pre>
+</div>
+<div created="20201207164319522" creator="RVO" draft.of="Industrie" draft.title="Industrie" modified="20210218132031687" modifier="RVO" tags="EnergieVraagSectoren" title="Draft of 'Industrie' by RVO">
+<pre>!Wat is het energie Verbruik Industrie?
+
+Finaal energieverbruik industrie in 2015 en 2017
+
+|&lt;div style=&quot;float:left; width:500px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/58087401/finaalenergiegebruikindustrie.JPG]] &lt;/div&gt;|
+
+__Bron__: CBSStatline 2018
+
+Het finaal energieverbruik voor warmte in de industrie is ongeveer even groot als in de gebouwde omgeving en betreft vooral warmte voor processen. Minder dan de helft van dit verbruik in de industrie bestaat uit aardgas verstookt in eigen ketels. In de industrie komt ook veel warmte uit het verbranden van aardolieproducten en wordt warmte geleverd door derden. Warmte geleverd door derden kan ook een WKK-installatie zijn op eigen terrein die door een andere partij wordt geëxploiteerd.
+			
+*Grote industrie van de sectoren basis metaal, glas, steenbakkerijen hebben een hoge temperatuur vraag en produceren vaak hoge temperatuur restwarmte en reststoom.
+*Grote industrie van de sectoren papier, voeding en genotsmiddelen en brouwerijen hebben een stoom en warm water vraag, en produceren vaak lage temperatuur restwarmte.
+*De raffinage en de chemische industrie zit daartussen in. 
+*Energie verwerkende en producerende industrie, zoals enerzijds de Energie centrales voor Elektriciteits productie met 33% steenkool x 94.6 kg CO2/GJ en anderzijds de Raffinage en organische basis industrie voor de productie van Nederlandse, Belgische en Duitse transportbrandstoffen met 75-80% aardolie x 73.3 kg CO2/GJ produceren gezamenlijk een groot deel van de nationale CO2 emissies. [[Emissiefactor in 2020 |https://www.rvo.nl/sites/default/files/2020/03/Nederlandse-energiedragerlijst-versie-januari-2020.pdf]] staat op RVO.NL website. 
+
+!Beschrijving kaart
+De nieuwe wms/wfs-kaart ligging industrie en CO2 emissies bevat de CO2 emissie gegevens van de [[nationale emissie registratie |http://www.emissieregistratie.nl]], en bevat de energievraag gegevens uit de database van de grote verbrandings-installaties &gt; 50 MW  &quot;Industrial Emissions Directive (2010/75/EU)&quot;.
+
+In Nederland gebruiken we 3150 PJ primair energieverbruik in 2017 aan energie uit olie, kolen en gas en duurzame bronnen. Deze energie wordt gebruikt voor de productie van elektriciteit en warmte, als brandstof voor transport en als grondstof, 1869 PJ finaal energieverbruik voor alle  eindgebruikers van energie en 574 PJ voor alle bedrijvigheid en industrie. De [[Monitoring warmte 2015 |https://www.cbs.nl/nl-nl/publicatie/2017/15/monitoring-warmte-2015]] van ECN/CBS blijkt uit ruim de helft finaal energieverbruik naar warmtevoorziening. Dit is de grootste verbruiker van energie in Nederland. Besparen, verduurzamen van energie en efficiënt gebruik van fossiele brandstoffen voor de warmtevoorziening hebben dan ook een grote impact op het totale energiegebruik en de CO2-uitstoot.
+
+De industrie heeft veel proceswarmte nodig, vooral de chemie en farmaceutische industrie, voedings-, genotmiddelen industrie  en metaalindustrie. Het grootste deel van de warmtevraag ligt hier tussen 250 en 500 °C. Ook is er een aanzienlijke warmtevraag boven de 1000 °C. Vooral in de metaalindustrie, waar 70% van de warmtevraag op dit temperatuurniveau ligt.
+
+!Finaal energieverbruik energie intensieve industrie in 2017
+|!Finaal energieverbruik |!Voedings-, genotmiddelen industrie |!Papier- en grafische industrie |!Chemie en farmaceutische industrie |!Bouwmaterialen industrie |!Basis metaal industrie |
+|Totaal energiedragers (PJ) | 87 | 25 | 284 | 27 | 52 |
+|Aardgas (%) | 53 | 29 | 21 | 72 | 25 |
+|Kool en koolproducten (%)| 2 | 0 | 0 | 7 | 34 |
+|Aardoliegrondstoffen en producten (%) | 0 | 0 | 39 | 2 | 0 |
+|Afval en andere energiebronnen (%) | 0 | 0 | 1 | 0 | 2 |
+|Elektriciteit (%) | 29 | 36 | 16 | 16 | 33 |
+|Warmte (%) | 15 | 29 | 24 | 1 | 6  |
+|Totaal hernieuwbare energie (%) | 1 | 6 | 0 | 2 | 0 |
+
+__Bron__: CBSStatline 2018
+
+!Hoe bereken ik een maximale theoretische restwarmte op basis van CO2 emissie
+
+Onderstaande berekeningsmethode geeft een eerste inschatting van de warmtevraag van het bedrijf. Hierbij dient wel opgemerkt te worden dat ervan uitgegaan is dat het totale verkoop van energie aan derden buiten het bedrijf verwaarloosbaar is.
+
+@@color:orange;
+&gt;MJ(warmte)/kgCO2 = 1000 * EF / (%steenkool * 94.6 kg/GJ(totaalfossiel)+%aardolie * 73.3 kg/GJ(totaalfossiel)+%aardgas * 56.8 kg/GJ(totaalfossiel)
+@@
+
+:Met ER = 90%, EF is Efficiëntie Factor voor omrekenen fossiele energie (FE) naar warmtevraag
+
+! Visie industrie 2050
+
+In 2050 zien wij een Nederland voor ons met een bloeiende, circulaire en mondiaal toonaangevende industrie, waar de uitstoot van broeikasgassen nagenoeg nul is. Waar uit biomassa (naast voedsel en veevoer) CO2, reststromen, en -gassen:  grondstof of brandstof voor onder andere de chemie of brandstof voor de lucht- of zeevaart wordt gemaakt. Waar fabrieken duurzame elektriciteit, geothermie, groen gas en groene waterstof gebruiken voor hun
+energiebehoefte. Waar de industrie helpt om de schommelingen in elektriciteitsproductie van zon- en windparken op te vangen. En waar we restwarmte hergebruiken in de industrie en, benutten voor woonwijken of de glastuinbouw. Hierdoor, - en met behulp van vergaande digitalisering - zijn waardeketens en productiemethoden fundamenteel veranderd; – we maken duurzame producten met duurzame processen.
+
+!Ambitie 2030
+
+De ambitie is dat productie van Nederlandse bedrijven plaatsvindt in installaties die behoren tot de 10% meest CO2-efficiënte installaties in de Europese industrie. Daarbij wordt het instrumentarium zo ingericht dat het behalen van de indicatieve doelstelling van 14,3 Mton effectief geborgd wordt.
+
+Vanaf 1992 heeft de overheid in het kader van het energiebesparingsbeleid met een groot aantal sectoren een meerjarenafspraak gemaakt over de verbetering van de energie-efficiency. De meerjarenafspraken energie-efficiency zijn overeenkomsten tussen de overheid en bedrijven, instellingen en gemeenten. 
+
+Zo zijn er:
+
+* Meerjarenafspraak energie-efficiency 2001-2020: MJA3, waarbij gemeenten en niet-ETS-ondernemingen kunnen toetreden. 
+* Meerjarenafspraak energie-efficiency ETS-ondernemingen: MEE (ondernemingen waarvoor deelname aan het Europese systeem van handel in broeikasgasemmissierechten (Emission Trading Scheme = ETS) verplicht is.) 
+
+De belangrijkste afspraken binnen de convenanten zijn: 
+Bedrijven spannen zich in om een gezamenlijke doelstelling te bereiken van 30 procent energie-efficiencyverbetering tussen 2005 en 2020. 
+Brancheorganisaties stellen een zogeheten routekaart voor de sector op die inzicht biedt in kansen voor de lange termijn en is gericht op innovatieve trajecten voor energie-efficiencyverbeteringen. 
+
+De energie-intensieve industrie heeft een akkoord gesloten dat zal leiden tot een extra energiebesparing van 9 petajoule (PJ) in 2020. Zie [[Meerjaren Afspraken |https://www.rijksoverheid.nl/documenten/regelingen/2017/04/24/addendum-meerjarenafspraak-energie-efficientie-ets-ondernemingen-mee]]
+
+Het [[Energieakkoord |http://www.energieakkoordser.nl/energieakkoord.aspx ]] is een initiatief van de SER en moest zorgen voor een inhaalslag van Nederland voor duurzame groei. Doelstelling van het Energie-akkoord   op energiebesparing is een gezamenlijke in 2020 100 PJ aan besparing te realiseren voor alle sectoren, met [[ bedrijfsspecifieke afspraken voor de grote industrie |https://www.energieakkoordser.nl/nieuws/2015/afspraken-energieakkoord-energie-efficientie-industrie.aspx]]
+
+Het [[Klimaatakkoord|https://www.klimaatakkoord.nl ]] is een initiatief van het kabinet en bouwt voort op het Energieakkoord. Het is een uitwerking van het Klimaatakkoord van Parijs. Daar heeft Nederland samen met 194 andere landen toegezegd te zorgen dat de aarde in 2050 niet meer dan 2 graden is opgewarmd.  Het Klimaatakkoord heeft één centraal doel: CO2-reductie. De ambitie is dat de Nederlandse CO2-uitstoot in 2030 fors terugdringt naar ten minste 49 procent ten opzichte van 1990. Bedrijven en organisaties in de sector Industrie willen de uitstoot van het broeikasgas CO2 verminderen: 14,3 miljard kilogram minder in 2030 additioneel aan het bestaand beleid (5,1 Mton). De ambitie is een bloeiende, circulaire en mondiaal toonaangevende industrie, waar de uitstoot van broeikasgassen in 2050 zelfs bijna nul is. Waar uit biomassa, CO2 en reststromen de grondstoffen worden gehaald voor onder andere de chemie en de brandstoffen voor de lucht- en zeevaart.
+
+!Verduurzaming
+
+De industrie treft maatregelen met directe effecten aan de eigen schoorsteen (scope 1). Daar wordt ook op gestuurd in het kader van de indicatieve opgave van de industrie. Daarnaast is klimaatwinst te behalen met de verduurzaming en reductie van warmte en toename van elektriciteitsinname en het leveren van restwarmte (of CO2) aan bijvoorbeeld de gebouwde omgeving of de glastuinbouw (scope 2 maatregelen). Ook kunnen keten-effecten als duurzaam grondstoffengebruik bijdragen aan de verduurzaming van de industrie (scope 3 maatregelen). 
+
+In het voorlopig hoofdlijnen klimaatakkoord is onderstaande indicatie opgenomen van door de
+industrie voorgestelde maatregelen.
+
+|!Technologie |!Inschatting vermeden ~CO2eq in 2030 in Mton |!Gemiddelde kosten in €/ton ~CO2 bovenop ETS in €/ton |!Scope 2 en 3 |
+|Procesefficiency | 6 | 0–50 |Ca 3 Mton besparing op aardgas door levering van restwarmte |
+|Lachgas en F-gassen | 2 | 0–30 | |
+|Elektrificatie en groene waterstof | 4 | 70-150 ||
+|Recycling, CCU en biobased chemie | 1 | 10–150 |Ca 2 Mton CO2 voor de glastuinbouw 1 à 2 Mton CCU en recycling die buitenlandse emissies voorkomen |
+|CCS | 7 | 50–70 ||
+|Totaal (opgave + bestaand beleid)| 20 | 6 à 7 Mton |
+
+De indicatieve indeling van maatregelen (inzet op o.a. procesefficiency, CCS, elektrificatie/groene waterstof en circulariteit) is geen blauwdruk voor de transitie maar de inzet van een adaptief proces. Hierbij is sprake van grote verschillen in kosten per technologie. De inschatting is dat de industrie tot 2030 in Nederland cumulatief voor € 9 tot 15 miljard zal moeten investeren waarmee direct of indirect wordt bijgedragen aan het
+realiseren van de klimaatdoelstellingen.
+
+Onderstaande grafiek geeft een indicatie hoe het reductiepad zich volgens de industrie kan ontwikkelen tot 2030.
+
+|&lt;div style=&quot;float:left; width:500px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/58087402/co2reductiepadindustrie2030-navigant.jpg]]&lt;/div&gt;|
+
+__Bron__: [[ Navigant (2018) Onderbouwing investering en emmissierechten industrie 2030, 11 oktober 2018 |https://www.klimaatakkoord.nl/documenten/publicaties/2019/01/08/achtergrondnotitie-industrie-onderbouwing-kosten-klimaattransitie]]
+
+&quot;Ruimte en infrastructuur&quot;
+
+De industrie speelt een belangrijke rol in de klimaat- en energietransitie als geheel en ook in het energiesysteem. De kabinetsperspectief op de Nationale Omgevingsvisie stelt over de industrie onder andere: “De havengebieden en industriële clusters van grootverbruikers aan de kust moeten maximaal energie besparen, transformeren naar nieuwe hernieuwbare energiebronnen en kunnen een schakelrol vervullen in de energietransitie, met aanlanding,
+benutting, omzetting en opslag van de windenergie op zee en het beschikbaar maken van de vrijkomende restwarmte voor de omliggende gebouwde omgeving.” Ook bij de industrie zijn veel combinaties met andere opgaven relevant, bijvoorbeeld met de gebouwde omgeving en de tuinbouw als het gaat om het benutten van restwarmte en CCU. Voorts is er ook een vraag naar gelijkstroomvoorzieningen.
+
+|&lt;div style=&quot;float:left; width:500px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/58087403/hoofdnet-infrastructuur-industrieclusters-windopzee.jpg]]&lt;/div&gt;|
+
+
+__Bron__:[[Gasunie nov 2018 |https://www.gasunie.nl/nieuws/waterstof-coalitie-concrete-plannen-voor-een-vliegende-start-van]]
+
+''Energie efficiëntie''
+
+Tools:
+
+* [[Industriële warmtepomp tool voor kostenraming warmtepomp met restwarmte|http://tools.industrialheatpumps.nl/warmtepompwijzer/EN_index.html]]
+* [[Stoom tool voor kosten raming reststoom en stoomtransport|http://www.rvo.nl/stoom-tool-new]]
+* [[Restwarmte benutting binnen de proces industrie |http://www1.eere.energy.gov/manufacturing/intensiveprocesses/pdfs/waste_heat_recovery.pdf]]
+* [[Restwarmte benutting bij bedrijven met koelinstallaties |http://www.rvo.nl/node/8088 ]]
+
+''Elektrificatie'' of ''Power2heat''
+
+Elektrificatie van warmteprocessen in de industrie biedt een belangrijke kans tot verduurzaming van de industriële productie (mits er voldoende opwek van hernieuwbare elektriciteit is).
+Tot 2030 wordt verwacht dat een aantal elektrificatietechnologieën een relevante impact kan hebben. Door innovaties kan dat perspectief na 2030 zelfs sterk toenemen. Elektrische boilers
+bieden de mogelijkheid tot een flexibele inzet, omdat deze snel op en af te regelen zijn, terwijl andere elektrificatietechnieken een hogere CO2-reductie en energie-efficiency bieden en bij voorkeur volcontinu worden gebruikt.
+
+__Meer info__:[[Rapport: Electrification in the Industry, Berenschot|https://www.berenschot.nl/publish/pages/5182/electrification_in_the_dutch_process_industry_-_final_report.pdf]]
+
+''Groene waterstof''
+
+Waterstof productie middels elektrolyse.
+In water worden twee elektroden gedompeld: de kathode en de anode. Tussen deze elektroden wordt een elektrische spanning aangebracht. Er zal waterstofgas ontstaan aan de kathode (positief geladen deeltjes) en zuurstofgas aan de anode (negatief geladen deeltjes): 
+
+&gt;$$2 H_2O$$ ⟶  $$2 H_2 + O_2$$
+
+Bij de verbranding hiervan ontstaat weer water volgens de reactie: 
+
+&gt;$$2 H_2$$ + $$O_2$$ ⟶  $$2 H_2O$$
+ 
+De [[Waterstof Coalitie |https://www.gasunie.nl/nieuws/waterstof-coalitie-concrete-plannen-voor-een-vliegende-start-van]], een groep van 27 milieuorganisaties, kennisinstellingen, overheden en bedrijven, waaronder ook Gasunie, is een [[concreet voorstel |https://storage.googleapis.com/planet4-netherlands-stateless/2018/11/61798793-coalitie-waterstof-vier-pijlers.pdf ]] neergelegd bij de onderhandelingstafels voor het Klimaatakkoord. De coalitie wil zich sterk maken voor de ontwikkeling van drie á vier Gigawatt conversiecapaciteit voor groene waterstof in 2030. De waterstof moet gemaakt gaan worden via grote elektrolysers van honderd megawatt of meer – een omvang die nu nog ongekend is. De elektrolysers moeten aan de kust komen, waar groene stroom van de Noordzeewind aan land komt. Met deze conversiecapaciteit aan de kust kan de industrie haar processen verduurzamen en CO2-vrij maken.
+
+Aan de kust is er een grote potentiële vraag naar waterstof voor industriële toepassingen (circa 125 tot 213 PJ). Het industriecluster Chemelot ligt niet aan de kust maar kent een potentiële vraag naar waterstof  van circa 25 tot 40 PJ.
+
+''Blauwe waterstof''
+
+Waterstofproductie uit gas met CO2 opslag. De zogenaamde blauwe waterstof kan verkregen worden door het ontleden van aardgas naar waterstof en CO2, waarbij vervolgens de CO2 ondergronds offshore opgeslagen zal worden.
+Stoomreforming (kortweg reforming genoemd) is een chemisch proces waarbij een koolwaterstof in aanwezigheid van stoom en/of zuurstofgas en eventueel een katalysator wordt omgezet in een waterstofrijk gasmengsel, ook wel reformaat genoemd. 
+De meeste toegepaste reformeringstechniek, tevens de meest toegepaste methode om waterstofgas te maken, is stoomreforming van aardgas. Hierbij wordt aardgas samengevoegd met stoom bij een temperatuur van 850°C en een druk van 25 bar: 
+
+&gt;$$ CH_4$$   +   $$2 H_2O$$  ⟶   $$CO_2$$   +   $$4 H_2$$
+
+Feitelijk vindt de reactie plaats in twee stappen, die beide evenwichtsreacties zijn: 
+
+&gt;$$ CH_4$$   +   $$H_2O$$  ⇌      $$CO$$   +   $$3 H_2$$
+&gt;$$ CO$$   +   $$H_2O$$  ⇌     $$CO_2$$   +   $$H_2 $$
+
+Deze laatste is de zogenaamde water-gas-shift-reactie. 
+
+Voor de zuurstof inzet van stoomreforming  is in principe een zuurstof  fabriek nodig die zuurstof geconcentreerd uit de lucht haalt, tenzij de zuurstof wordt gebruikt die bij een nabije elektrolyse installatie vrijkomt. 
+Het totale rendement op onderwaarde van de waterstof productie middels stoomreforming is 82%, inbegrepen de energie voor de zuurstofinzet van de zuurstoffabriek in de ATR. Bij inzet van zuurstof uit elektrolyse vervalt die energie-input, dus wordt het rendement 85%. Op de bovenste verbrandingswaarde is het rendement hoger namenlijk 88%, omdat bij verbranding van waterstof relatief meer condensatiewarmte vrijkomt dan bij aardgas.
+Een extra voordeel is dat bij pre-combustion capture de CO2 vrijkomt onder hoge druk; dit kan direct worden getransporteerd en geïnjecteerd in gasvelden
+
+''CCS-Afvang en opslag $$CO_2$$''
+
+Afvang, transport en opslag van door de industrie geproduceerde CO2 (CCS) wordt door de industrie en door de Rijksoverheid gezien als noodzakelijke activiteit om de 2030-doelstelling te behalen53. Afvang en transport kunnen bovendien dienen als opmaat naar hergebruik van koolstof (CCU). Afgevangen CO2 kan in de toekomst bijdragen (bijvoorbeeld in combinatie met groene waterstof) aan de ontwikkeling van synthetische grond- en brandstoffen (bijvoorbeeld Steel2chemicals) en de mogelijkheid om negatieve emissies te realiseren (naast andere opties die negatieve emissies kunnen helpen realiseren). De beoogde opschaling past in het doel dat
+de Nederlandse industrie in 2050 nagenoeg klimaatneutraal produceert. CCU maakt naar verwachting dan een belangrijk deel uit van de industriële productie, door CO2 als grondstof te hergebruiken in bijvoorbeeld bouwmaterialen of plastics.
+
+Het rendement op onderwaarde is 82%, inbegrepen de energie voor de zuurstofinzet in de ATR. Bij inzet van zuurstof uit elektrolyse vervalt die energie-input, dus wordt het rendement 85%. 
+
+''CCU''
+
+* Hergebruik groene kort cyclische CO2 afvang vanuit biomassa of vanuit de lucht voor methanol productie als basis van transport brandstoffen, chemicaliën en kunststoffen. 
+* Hergebruik fossiele CO2 afvang in de glastuinbouw voor stimulatie van groeiprocessen.
+
+''Verduurzaming Energie Vraag''
+
+Het gebruik van duurzame bronnen zoals [[Biomassa | Hout]], biofuell, [[Biogas]], [[Zonnewarmte]], [[Geothermie:Diep]]
+
+__Meer info__: [[Rapport: Kansen voor diepe geothermie bij industriële processen |http://www.rvo.nl/sites/default/files/2015/03/Definitief_Rapport%20diepe%20geothermie%20bij%20industrie.pdf]]
+
+
+!Transitie in Grondstofketen 
+
+!! Grondstofketen Olie naar Materialen
+
+|&lt;html&gt;&lt;img hspace=1 vspace=1 src=&quot;https://samenwerken.pleio.nl/file/download/58087376/olie-materialen-keten.bmp&quot; width=&quot;504&quot; /&gt;&lt;/html&gt;|
+
+!! Grondstofketen Bio-based Materialen
+
+|&lt;html&gt;&lt;img hspace=1 vspace=1 src=&quot;https://samenwerken.pleio.nl/file/download/58087375/biobased-materialen-keten.bmp&quot; width=&quot;504&quot; /&gt;&lt;/html&gt;|
+
+!! Chemport Europe Noord Nederland
+
+|&lt;html&gt;&lt;iframe width=&quot;854&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/PlDIUIZF5Dc&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/html&gt;|
+
+
+!!Gross Energy Requirement GER-waarde materialen en CO2 lijst
+
+GER-waarde staat voor 'Gross Energy Requirement': een maat van het totale primaire energie verbruik bij het vervaardigen   van een product.
+
+* [[GER-waarden en CO2-lijst - februari 2018.xlsx |https://www.rvo.nl/file/ger-waarden-en-co2-lijst-februari-2018xlsx-0 ]]
+
+
+!!Recycling
+
+''Metaal''
+
+Op dit moment worden warmgewalste balken (zoals HE- en IPE-profielen) voor 51% hergebruikt. Dat kan op ‘bouwdeelniveau’, als onderdeel van een nieuwe constructie, en op ‘gebouwniveau’, als blijvende component van een constructie die zich opmaakt voor een ‘tweede leven’.(bron: www.bouwenmetstaal.nl). ''Hergebruik op locatie'' levert een ''CO2 reductie'' van bijna ''100%''.
+
+De productie van staal uit ruwijzer, op basis van ijzererts, gebeurt in een oxystaalfabriek (zoals bij Tatasteel in IJmuiden). Bij dit proces wordt ook schroot ingezet (tot 15-20%) . Zowel de slak als het hoogovengas, cokesovengas en het gas dat bij de staalfabricage vrijkomt, wordt hergebruikt. Met deze gassen wordt elektriciteit en stoom opgewekt. De GER-waarde (primair energie gebruik) van lichtgelegeerd primair staal is 30.9 MJ/kg (2.3 kg CO2-eq/kg), terwijl de ''recycling van lichtgelegeerd staal uit schroot'' slechts 8.7 MJ/kg (0.42 kg CO2-eq/kg) is. Dat is aldus een ''CO2-eq reductie'' van ongeveer ''80%''. Ook de reststroom (ijzeroxides) uit de waterzuivering gaat weer terug de processen in. 
+
+[[HIsarna demo |https://www.tatasteel.nl/nl/innovatie/HIsarna]] te Tatasteel Ijmuiden  met een capaciteit van 60 kton vloeibaar ruwijzer per jaar, is een compleet ''nieuwe technologie'' om staal uit ijzererts te maken. Deze bestaat uit een reactor waar bovenin ijzererts wordt ingevoerd. Het erts wordt bij een hoge temperatuur vloeibaar gemaakt in een cycloon en druppelt op de bodem van de reactor waar steenkoolpoeder wordt geïnjecteerd. Het koolpoeder reageert met de gesmolten erts waarbij vloeibaar ruwijzer ontstaat als basismateriaal voor de productie van hoogwaardig staal. Het gas dat HIsarna uitstoot, is geconcentreerd CO2. De technologie maakt een aantal voorbewerkingsstappen overbodig en stelt minder strikte eisen aan de kwaliteit van de grondstoffen. Dit resulteert in een enorme efficiëntieverhoging. Het verlaagt het energieverbruik, heeft een ''CO2-emissie reductie'' van ''20%'' en verlaagt de uitstoot van fijnstof, zwaveldioxide en stikstofdioxide met 60% tot 80%. Doordat de HIsarna installatie hooggeconcentreerd CO2 produceert, is het zeer geschikt voor CO2-afvang en -opslag (CCS) of -gebruik (CCU), zonder een kostbaar gasscheidingsproces. De combinatie van HIsarna en CO2-opslag zou kunnen leiden tot een totale CO2-beperking van 80% in het staalproductieproces. 
+
+* [[ Routekaart 2030 VNMI branchevereniging metallurgische industrie |https://www.vnmi.nl/index.php?page=24]]
+
+''Kunststof''
+
+* [[ GER-waarde berekeningen voor de verschillende kunststoffen en recyclaten.|http://nrk.nl/Content/Files/file/RKI%20VT%20voorbeeldberekeningen2007.pdf]]
+* [[ Kunststof inzamelaars|http://www.nrkrecycling.nl/inzamelaar/wie-zamelt-wat-in]]
+* [[ Leveranciers gerecycled granulaat |http://www.nrkrecycling.nl/leverancier/leveranciers-regranulaat]]
+* [[ Leveranciers gerecycled compounds |http://www.nrkrecycling.nl/leverancier/leveranciers-compounds]]
+* [[ Leveranciers gerecycled regranulaat |http://www.nrkrecycling.nl/leverancier/leveranciers-regranulaat]]
+* [[ Leveranciers gerecycled maalgoed |http://www.nrkrecycling.nl/leverancier/leveranciers-maalgoed]]
+* [[ Voorbeelden producten van gerecycled kunststof |http://www.nrkrecycling.nl/recycling/producten-van-gerecyclede-kunststof]]
+* [[ nieuws |http://www.nrkrecycling.nl/nieuws/nieuwsberichten ]]
+
+''Papier''
+
+ De GER-waarde (primair energie gebruik) van houtvrij grafisch papier is 51 MJ/kg (1.2 kg CO2-eq/kg), terwijl de ''recycling van oud papier tot papier''  slechts 26 MJ/kg (0.9 kg CO2-eq/kg) is. Dat is aldus een ''CO2-eq reductie'' van ongeveer ''25%''.
+
+83% van het papier dat in Nederland wordt geproduceerd heeft oud papier als grondstof. Papiervezels kunnen tot 7 maal hergebruikt worden. Ook wat betreft het inzamelen van papier is Nederland wereldwijd één van de toppers: 85% van het papier wordt gescheiden ingezameld. Jaarlijks (2015) wordt in Nederland 921 kton huishoudelijk oud papier en karton opgehaald.  De  papier sector is 100% FSC- en PEFC-gecertificeerd.
+
+* [[ Routekaart 2030 VNP branchevereniging papier industrie |https://www.vnmi.nl/index.php?page=24]]
+
+!Meer info
+
+* [[MJA en MEE afspraken|http://www.rvo.nl/subsidies-regelingen/meerjarenafspraken-energie-efficiency]]
+* [[Nieuws over energie van de chemische industrie|http://www.spice3.eu]]
+* [[Supply-Chain Initiatives Database |http://www.iipnetwork.org/databases/supply-chain ]]
+* [[Industrial Efficiency Policy Database |http://iepd.iipnetwork.org/ ]]
+* [[Industrial Efficiency Technology Database |http://ietd.iipnetwork.org/]]
+* [[C2E2: Copenhagen Centre of Energie Efficiency |http://kms.energyefficiencycentre.org/advanced-search ]]
+
+
+</pre>
 </div>
 <div changecount="9" created="20150311151500000" modified="20201208135218147" modifier="RVO" order="4" tags="Inhoud" title="DuurzaamEnergiePotentieel" type="text/vnd.tiddlywiki">
 <pre>|!Hoogte/Diepte (m)|&gt;|&gt;|&gt;|!Warmte productie|!Stroom productie|
@@ -12711,7 +12954,7 @@ Postcode 6 en Postcode 4 gebieden zijn aparte indelingen en lopen dwars door wij
 <div created="20210121172926811" creator="RVO" modified="20210121172944112" modifier="RVO" tags="" title="Test">
 <pre>Dit is een test</pre>
 </div>
-<div created="20201207164349480" creator="RVO" modified="20210218131901561" modifier="RVO" tags="EnergieVraagSectoren" title="Utiliteitsbouw">
+<div created="20201207164349480" creator="RVO" modified="20210218132124541" modifier="RVO" tags="EnergieVraagSectoren" title="Utiliteitsbouw">
 <pre>
 
 !! Utiliteitsbouw
@@ -12732,10 +12975,12 @@ Bron: Lisa.
 
 !Energie gebruik
 
-Status finaal energie gebruik per sector is te vinden in de [[nationale energiebalans @CBSStatline | http://statline.cbs.nl/Statweb/publication/?DM=SLNL&amp;PA=70846NED&amp;D1=0-1%2c8%2c24-25%2c34-37&amp;D2=20&amp;D3=6-7%2c27%2c32-33&amp;D4=17-18&amp;VW=T]]
+Status finaal energie gebruik per sector is te vinden in de [[nationale energiebalans @CBSStatline |http://statline.cbs.nl/Statweb/publication/?DM=SLNL&amp;PA=70846NED&amp;D1=0-1%2c8%2c24-25%2c34-37&amp;D2=20&amp;D3=6-7%2c27%2c32-33&amp;D4=17-18&amp;VW=T]]
 
 Hieronder staat een overzicht van het gemiddelde energie gebruik per type Utiliteitsbouw.($1 MJ=10^6 J$)
-&lt;html&gt;&lt;DIV align=center&gt;&lt;IMG hspace=1 vspace=1 src=&quot;https://samenwerken.pleio.nl/file/download/58087326/energieubouw.jpg&quot;&gt;&lt;/DIV&gt;&lt;/html&gt;
+
+|&lt;div style=&quot;float:left; width:500px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/58087326/energieubouw.jpg]] &lt;/div&gt;|
+
 Bron: Meijer Energie &amp; Milieumanagement B.V., 2008                                                                                               
 
 !Energie besparing
