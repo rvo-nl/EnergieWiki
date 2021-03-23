@@ -221,6 +221,8 @@ Error message and password prompt
 
 <li>$:/state/toc/Inhoud-Restricties--118161433</li>
 
+<li>$:/state/toc/Inhoud/DuurzaamEnergiePotentieel-Restwarmte--118161433</li>
+
 <li>$:/state/toc/Inhoud/EnergieVraagSectoren-Huishoudens--118161433</li>
 
 <li>$:/state/toc/Inhoud/EnergieVraagSectoren-Industrie--118161433</li>
@@ -364,6 +366,8 @@ Error message and password prompt
 <li>LTDatacentraWarmte</li>
 
 <li>Materialen:GrossEnergyRequirement(GER)</li>
+
+<li>MT_WarmteBronnen_ECW</li>
 
 <li>Nederland</li>
 
@@ -10089,6 +10093,9 @@ Error message and password prompt
 <div created="20210128125530929" creator="RVO" modified="20210128125530929" modifier="RVO" title="$:/state/toc/Inhoud-Restricties--118161433">
 <pre>open</pre>
 </div>
+<div created="20210323163711186" creator="RVO" modified="20210323163711186" modifier="RVO" title="$:/state/toc/Inhoud/DuurzaamEnergiePotentieel-Restwarmte--118161433">
+<pre>open</pre>
+</div>
 <div created="20210128125657289" creator="RVO" modified="20210128125657289" modifier="RVO" title="$:/state/toc/Inhoud/EnergieVraagSectoren-Huishoudens--118161433">
 <pre>open</pre>
 </div>
@@ -10116,7 +10123,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20210323140644346" creator="RVO" list="LT_WarmteBronnen_ECW LTCondensWarmte LTDatacentraWarmte WarmteAtlas" modified="20210323163341094" modifier="RVO" title="$:/StoryList">
+<div created="20210323140644346" creator="RVO" list="MT_WarmteBronnen_ECW LTCondensWarmte LTDatacentraWarmte WarmteAtlas" modified="20210323163341094" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -13154,7 +13161,7 @@ Alle kosten gegevens, zoals CAPEX, OPEX van onderstaande installaties zijn weerg
 <div created="20201210115231179" creator="RVO" modified="20201210125104715" modifier="RVO" order="1" tags="Inhoud" title="LocatieInfo">
 <pre></pre>
 </div>
-<div created="20210323163553694" creator="RVO" modified="20210323163629552" modifier="RVO" tags="" title="LT_WarmteBronnen_ECW">
+<div created="20210323163553694" creator="RVO" modified="20210323163644539" modifier="RVO" tags="Restwarmte" title="LT_WarmteBronnen_ECW">
 <pre>! Attributen
 
 &lt;table class=&quot;table table-striped&quot;&gt;
@@ -13340,6 +13347,71 @@ Alle kosten gegevens, zoals CAPEX, OPEX van onderstaande installaties zijn weerg
 GER-waarde staat voor 'Gross Energy Requirement': een maat van het totale primaire energie verbruik bij het vervaardigen   van een product.
 
 zie [[GER-waarden en CO2-lijst - februari 2018.xlsx |https://www.rvo.nl/file/ger-waarden-en-co2-lijst-februari-2018xlsx-0 ]]</pre>
+</div>
+<div created="20210323163656335" creator="RVO" modified="20210323163741053" modifier="RVO" tags="Restwarmte" title="MT_WarmteBronnen_ECW">
+<pre>! Attributen
+
+&lt;table class=&quot;table table-striped&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Kenmerk&lt;/th&gt;
+        &lt;th&gt;Eenheid&lt;/th&gt;
+        &lt;th&gt;Waarde&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;BronNaam&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;[BronNaam]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;TypeBron&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;[TypeBron]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Vermogen van de Bron&lt;/td&gt;
+        &lt;td&gt;MW&lt;/td&gt;
+        &lt;td&gt;[MWth]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;In te zetten aandeel&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;[CapFactor]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Aandeel vollasturen&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;[VolFactor]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Status&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;[Status]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Bron Temperatuur&lt;/td&gt;
+        &lt;td&gt;C&lt;/td&gt;
+        &lt;td&gt;[BronTemp]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Schatting min kosten voor uitkoppeling&lt;/td&gt;
+        &lt;td&gt;euro/kW&lt;/td&gt;
+        &lt;td&gt;[UitMin]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Schatting max kosten voor uitkoppeling&lt;/td&gt;
+        &lt;td&gt;euro/kW&lt;/td&gt;
+        &lt;td&gt;[UitMax]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Meerkosten warmteproductie&lt;/td&gt;
+        &lt;td&gt;euro/GJ&lt;/td&gt;
+        &lt;td&gt;[ProdKost]&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;</pre>
 </div>
 <div changecount="27" created="20150311155900000" creator="RVO" modified="20210128131657587" modifier="RVO" order="2" tags="RegioEnergieInfo" title="Nederland" type="text/vnd.tiddlywiki">
 <pre>!Wat is de energie ambitie van Nederland? 
