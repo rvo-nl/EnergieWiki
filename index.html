@@ -311,6 +311,8 @@ Error message and password prompt
 
 <li>ConversieEfficienties</li>
 
+<li>Draft of 'AquathermieOpenWater' by RVO</li>
+
 <li>Draft of 'Industrie' by RVO</li>
 
 <li>DuurzaamEnergiePotentieel</li>
@@ -10147,7 +10149,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20210325140138551" creator="RVO" list="LT_Aardwarmte" modified="20210325141818938" modifier="RVO" title="$:/StoryList">
+<div created="20210325142420428" creator="RVO" list="[[Draft of 'AquathermieOpenWater' by RVO]] LT_Aardwarmte" modified="20210325142420428" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11069,6 +11071,28 @@ zie [[Athos project|https://athosccus.nl/]]</pre>
 </div>
 <div created="20201207164434361" modified="20201207164501693" tags="EnergieKentallen" title="ConversieEfficienties">
 <pre></pre>
+</div>
+<div created="20210323144634654" creator="RVO" draft.of="AquathermieOpenWater" draft.title="AquathermieOpenWater" modified="20210325142424359" modifier="RVO" tags="Omgevingswarmte" title="Draft of 'AquathermieOpenWater' by RVO">
+<pre>! Attributen
+
+&lt;table id=&quot;AquathermieOpenWaterAttributen&quot;
+      class=&quot;collapse table table-striped table-hover table-sm&quot; &gt;
+         &lt;thead&gt;
+            &lt;tr &gt;&lt;td&gt;Attribuut&lt;/td&gt;                    &lt;td&gt;Waarde&lt;/td&gt;                &lt;td&gt;Eenheid&lt;/td&gt;    &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr &gt;&lt;td&gt;Naam&lt;/td&gt;                          &lt;td&gt;[naam]&lt;/td&gt;                &lt;td&gt;&lt;/td&gt;                        &lt;/tr&gt;
+            &lt;tr &gt;&lt;td&gt;Waterschap&lt;/td&gt;                 &lt;td&gt;[waterschap]&lt;/td&gt;       &lt;td&gt;&lt;/td&gt;                        &lt;/tr&gt; 
+            &lt;tr &gt;&lt;td&gt;Gemeente&lt;/td&gt;                   &lt;td&gt;[gemeente]&lt;/td&gt;         &lt;td&gt;&lt;/td&gt;                        &lt;/tr&gt;
+            &lt;tr &gt;&lt;td&gt;RES-regio&lt;/td&gt;                     &lt;td&gt;[res-regio]&lt;/td&gt;           &lt;td&gt;&lt;/td&gt;                        &lt;/tr&gt;                             
+            &lt;tr &gt;&lt;td&gt;Provincie&lt;/td&gt;                     &lt;td&gt;[provincie]&lt;/td&gt;           &lt;td&gt;&lt;/td&gt;                        &lt;/tr&gt;
+            &lt;tr &gt;&lt;td&gt;Warmte potentie&lt;/td&gt;        &lt;td&gt;[wp]&lt;/td&gt;                     &lt;td&gt;GJ/jaar&lt;/td&gt;             &lt;/tr&gt;
+            &lt;tr &gt;&lt;td&gt;Warmte potentie per ha&lt;/td&gt;    &lt;td&gt;[wp_opp]&lt;/td&gt;      &lt;td&gt;GJ/(ha.jaar)&lt;/td&gt;      &lt;/tr&gt;
+            &lt;tr &gt;&lt;td&gt;Oppervlakte&lt;/td&gt;               &lt;td&gt;[wp_opp]&lt;/td&gt;              &lt;td&gt;ha&lt;/td&gt;                    &lt;/tr&gt;
+            &lt;tr &gt;&lt;td&gt;Technische potentie&lt;/td&gt;   &lt;td&gt;[tp_nb]&lt;/td&gt;     &lt;td&gt;aantal huishoudens nieuwbouw&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr &gt;&lt;td&gt;Technische potentie&lt;/td&gt;   &lt;td&gt;[tp_bb]&lt;/td&gt;    &lt;td&gt;aantal huishoudens bestaande bouw&lt;/td&gt;&lt;/tr&gt;
+        &lt;/tbody&gt;
+&lt;/table&gt;</pre>
 </div>
 <div created="20201207164319522" creator="RVO" draft.of="Industrie" draft.title="Industrie" modified="20210218132031687" modifier="RVO" tags="EnergieVraagSectoren" title="Draft of 'Industrie' by RVO">
 <pre>!Wat is het energie Verbruik Industrie?
@@ -13249,8 +13273,29 @@ Alle kosten gegevens, zoals CAPEX, OPEX van onderstaande installaties zijn weerg
 <div created="20201210115231179" creator="RVO" modified="20201210125104715" modifier="RVO" order="1" tags="Inhoud" title="LocatieInfo">
 <pre></pre>
 </div>
-<div created="20210325131414063" creator="RVO" modified="20210325141925464" modifier="RVO" tags="Aardwarmte" title="LT_Aardwarmte">
-<pre></pre>
+<div created="20210325131414063" creator="RVO" modified="20210325142639709" modifier="RVO" tags="Aardwarmte" title="LT_Aardwarmte">
+<pre>! Attributen
+
+Gemeente: &lt;font color=&quot;0000FF&quot;&gt;[GM_NAAM]&lt;/font&gt;&lt;br&gt;
+Buurt: &lt;font color=&quot;0000FF&quot;&gt;[BU_NAAM]&lt;/font&gt;&lt;br&gt;
+&lt;table id=&quot;LTAardwarmtePotentieel&quot;
+       class=&quot;collapse table table-striped table-hover table-sm&quot; &gt;
+    &lt;thead&gt;
+      &lt;tr&gt;        &lt;th&gt;Potentieel&lt;/th&gt;        &lt;th&gt;Eenheid&lt;/th&gt;        &lt;th&gt;Waarde&lt;/th&gt;      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Potentieel Lage temperatuur Aardwarmte per ha per Buurt&lt;/td&gt;
+        &lt;td&gt;TJ/(ha.jaar)&lt;/td&gt;
+        &lt;td&gt;[LTA_TJ_HA]&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Totaal Potentieel Lage temperatuur Aardwarmte per Buurt&lt;/td&gt;
+        &lt;td&gt;TJ/(jaar)&lt;/td&gt;
+        &lt;td&gt;[LTA_WA_TJ]&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;</pre>
 </div>
 <div created="20210323163553694" creator="RVO" modified="20210323163644539" modifier="RVO" tags="Restwarmte" title="LT_WarmteBronnen_ECW">
 <pre>! Attributen
