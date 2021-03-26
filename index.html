@@ -10189,7 +10189,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20210326131601362" creator="RVO" list="Verbodsgebieden AardkundigeWaarden AandachtsgebiedNatuur" modified="20210326134013242" modifier="RVO" title="$:/StoryList">
+<div created="20210326131601362" creator="RVO" list="RestrictieOrdening RestrictieSpecifiekProvinciaalBeleid Verbodsgebieden AardkundigeWaarden AandachtsgebiedNatuur" modified="20210326134421917" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -13784,8 +13784,32 @@ Postcode 6 en Postcode 4 gebieden zijn aparte indelingen en lopen dwars door wij
 &lt;/tbody&gt;
 &lt;/table&gt;</pre>
 </div>
-<div created="20210323161634851" creator="RVO" modified="20210325124335320" modifier="RVO" tags="Restricties" title="RestrictieOrdening">
-<pre>! Attributen
+<div created="20210323161634851" creator="RVO" modified="20210326134528031" modifier="RVO" tags="Restricties" title="RestrictieOrdening">
+<pre>!Ordening
+Restrictiegebied ordening kan de volgende typen bevatten:
+* Bodemenergieplannen
+* Interferentiegebieden
+* Masterplan
+
+!Bodemenergieplannen
+Een bodemenergieplan beschrijft de ordening van de ondergrond om bodemenergie voor iedereen mogelijk te maken en interferentie tussen bodemenergiesystemen te voorkomen. Dit betekent dat het beoogde bodemenergiesysteem moet voldoen aan de regels die in dit plan zijn opgenomen. Deze regels kunnen gelden voor open systemen, gesloten systemen of beide en kunnen bijvoorbeeld betrekking hebben op de positionering van warme en koude bronnen (open systemen) en de positionering van de lussen (gesloten systemen). Voor meer informatie kunt u contact opnemen met het bevoegd gezag. Dit kan een gemeente of provincie zijn. 
+
+De bronhouders van deze data zijn de provincies en de gemeenten.
+ 
+!Interferentiegebieden
+Gemeenten en in bijzondere gevallen provincies verordenen interferentiegebieden wanneer het wenselijk is dat in een gebied beleid wordt ontwikkeld ter voorkoming van (toekomstige) interferentie tussen bodemenergiesystemen. Of anderszins ter bevordering van het doelmatig gebruik van bodemenergie. Een interferentiegebied maakt het mogelijk om de ontwikkelingen van bodemenergie in een gebied te sturen, doordat in die gebieden ook kleine gesloten systemen (&lt;70 kW) vergunning plichtig zijn. Hierdoor kunnen extra eisen gesteld worden aan het systeem. 
+
+De bronhouders van deze data zijn de provincies en de gemeenten. 
+ 
+!Masterplan
+In een masterplan wordt de integrale gebiedsvisie op het gebruik van de ondergrond beschreven. In een masterplan kan het gebruik van bodemenergie worden afgestemd met andere functies en kwaliteiten van de ondergrond in het gebied. Het masterplan zelf heeft geen juridische status, maar de opgenomen beleidsregels, interferentiegebieden, etc. hebben die wel. De ordening van bodemenergiesystemen heeft betrekking op drie aspecten:
+* Het voorkomen van negatieve onderlinge beïnvloeding van bodemenergiesystemen (interferentie).
+* Het voorkomen van negatieve beïnvloeding van andere bodemfuncties.
+* Het waar mogelijk benutten van positieve interactie tussen bodemenergiesystemen onderling en tussen bodemenergiesystemen en ander bodemgebruik.
+
+De bronhouders van deze data zijn de provincies en de gemeenten.
+
+! Attributen
 
 &lt;table class=&quot;table table-striped table-hover&quot;&gt;
  &lt;thead&gt;
@@ -13805,8 +13829,14 @@ Bij de restrictiegebieden wordt getoetst op provinciale restricties.
 
 Voor WKO (Warmte/Koude Opslag) zijn er de onderstaande verbods- en aandachtsgebieden. Ook kunnen er beperkingen zijn vanwege andere bronnen die in de interferentie-zone gelegen zijn. </pre>
 </div>
-<div created="20210323161434329" creator="RVO" modified="20210323161538601" modifier="RVO" tags="Restricties" title="RestrictieSpecifiekProvinciaalBeleid">
-<pre>! Attributen
+<div created="20210323161434329" creator="RVO" modified="20210326134350505" modifier="RVO" tags="Restricties" title="RestrictieSpecifiekProvinciaalBeleid">
+<pre>!Restrictie Specifiek Provinciaal Beleid
+
+Dit zijn gebieden die door specifiek provinciaal beleid een verbod of een restrictie hebben voor de toepassing van bodemenergie. Het kan zijn dat de beleidsregel alleen van toepassing is voor open of gesloten bodemenergiesystemen. Neem hierover contact op met de provincie voor open systemen en voor gesloten systemen met de gemeente. 
+
+De bronhouder van deze data is de provincie
+
+! Attributen
 
 &lt;table class=&quot;table table-striped table-hover&quot;&gt;
  &lt;thead&gt;
