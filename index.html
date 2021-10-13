@@ -10105,7 +10105,7 @@ Error message and password prompt
 <div created="20201210095406893" creator="RVO" modified="20201210095406893" modifier="RVO" title="$:/state/plugin-info-334910430-$:/core---1812962263">
 <pre>contents</pre>
 </div>
-<div created="20210323133037549" creator="RVO" modified="20210331112741976" modifier="RVO" title="$:/state/sidebar">
+<div created="20210323133037549" creator="RVO" modified="20211013134826722" modifier="RVO" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20201127162053516" modified="20201208160918400" title="$:/state/tab--1963855381">
@@ -10231,7 +10231,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20211013132441261" creator="RVO" list="BuurtEnergieInfo RegioEnergieInfo WarmteAtlas" modified="20211013133038254" modifier="RVO" title="$:/StoryList">
+<div created="20211013132441261" creator="RVO" list="BuurtEnergieInfo" modified="20211013133038254" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11176,7 +11176,7 @@ De huidige realisatie van duurzame energie is te vinden op [[Hernieuwbare energi
 <div created="20210325151134329" creator="RVO" modified="20210325151156034" modifier="RVO" tags="RealisatieProjecten" title="BodemEnergie">
 <pre></pre>
 </div>
-<div changecount="22" created="20150311164100000" creator="RVO" modified="20211013133149007" modifier="RVO" order="9" tags="RegioEnergieInfo" title="BuurtEnergieInfo" type="text/vnd.tiddlywiki">
+<div changecount="22" created="20150311164100000" creator="RVO" modified="20211013134823902" modifier="RVO" order="9" tags="RegioEnergieInfo" title="BuurtEnergieInfo" type="text/vnd.tiddlywiki">
 <pre>!Overzicht
 
 Een gemeente is opgebouwd uit wijken en een wijk bestaat uit buurten.
@@ -11195,7 +11195,8 @@ Volgende Energie Attributen zijn beschikbaar per Buurt voor het Jaartal ''2018''
 |Beschrijving|Attribuut Naam|Detail Niveau|Eenheid|Bron|h
 |Buurt Code|BU_CODE|Buurt||Bron CBS en Kadaster|
 |Buurt Naam|BU_NAAM|Buurt||Bron CBS en Kadaster|
-|~GemeenteNaam|GM_NAAM|Buurt||Bron CBS en Kadaster|
+|GemeenteNaam|GM_NAAM|Buurt||Bron CBS en Kadaster|
+|Stedelijkheid|STED|Buurt||Bron CBS en Kadaster|
 |Aantal huishoudens|AANTAL_HH|Buurt||Bron CBS en Kadaster|
 |Aantal inwoners|AANT_INW|Buurt||Bron CBS en Kadaster|
 |Aantal Autos|AUTO_HH|Buurt||Bron CBS en Kadaster|
@@ -11208,15 +11209,6 @@ Volgende Energie Attributen zijn beschikbaar per Buurt voor het Jaartal ''2018''
 |Totaal Huishoudelijk Gasgebruik|HH_GAS_TJ|Buurt||Bron CBS en Kadaster|
 |Totaal Huishoudelijk Elektriciteitsgebruik|HH_EL_TJ|Buurt|TJ/jaar|Bron CBS en Kadaster|
 |Gasgebruik Huishoudens per opp|HH_GAS_OPP|Buurt|GJ/(ha.jaar)|Bron CBS en Kadaster|
-|Potentieel Koude Opslag door gesloten bodemsystemen|GS_KOUD|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
-|Potentieel Warmte Opslag door gesloten bodemsystemen|GS_WARM|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
-|Potentieel Koude Opslag door open bodemsystemen|OS_KOUD|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
-|Potentieel Warmte Opslag door open bodemsystemen|OS_WARM|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
-|Kans Aardwarmte Krijt-Jura reservoir |GT_KRIJT |Buurt|Kans|[[Bron NLOG | http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/76cf70ff-2498-4e77-b9f6-7e5c8707953e]]|
-|Kans Aardwarmte Trias reservoir |GT_TRIAS |Buurt|Kans|[[Bron NLOG | http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/24fb53ff-83eb-45af-b9f2-e7b4ae31c0c2]]|
-|Kans Aardwarmte Slochteren reservoir |GT_SLOCHT |Buurt|Kans|[[Bron NLOG | http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/fcfbc93b-ca40-43f3-8a96-9298d44d1c70]]|
-|Lage Temperatuur Condens ~RestWarmte uit ~KoelProcessen pe rBuurt Oppervlak|LT_WA_OPP|Buurt|GJ/(ha.jaar)|[[Bron RVO | CondenswarmteKoelinstallaties ]]|
-|Totaal Lage Temperatuur Condens ~RestWarmte uit ~KoelProcessen|LT_WA_TJ|Buurt|TJ/jaar|[[Bron RVO | CondenswarmteKoelinstallaties]]|
 |Oppervlakte Totaal|OPP_LAND|Buurt|ha|Bron CBS en Kadaster|
 |Oppervlakte Land|OPP_TOT|Buurt|ha|Bron CBS en Kadaster|
 |Oppervlakte Water|OPP_WATER|Buurt|ha|Bron CBS en Kadaster|
@@ -11230,6 +11222,15 @@ Volgende Energie Attributen zijn beschikbaar per Buurt voor het Jaartal ''2018''
 |Percentage Woningen bouwjaar vanaf 2000|P_WONV2000|Buurt||Bron CBS en Kadaster|
 |Aantal Woningen|WONINGEN|Buurt||Bron CBS en Kadaster|
 |Gemiddelde ~WoningWaarde|WOZ|Buurt|x1000euro|Bron CBS en Kadaster|
+|Potentieel Koude Opslag door gesloten bodemsystemen|GS_KOUD|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
+|Potentieel Warmte Opslag door gesloten bodemsystemen|GS_WARM|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
+|Potentieel Koude Opslag door open bodemsystemen|OS_KOUD|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
+|Potentieel Warmte Opslag door open bodemsystemen|OS_WARM|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
+|Kans Aardwarmte Krijt-Jura reservoir |GT_KRIJT |Buurt|Kans|[[Bron NLOG | http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/76cf70ff-2498-4e77-b9f6-7e5c8707953e]]|
+|Kans Aardwarmte Trias reservoir |GT_TRIAS |Buurt|Kans|[[Bron NLOG | http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/24fb53ff-83eb-45af-b9f2-e7b4ae31c0c2]]|
+|Kans Aardwarmte Slochteren reservoir |GT_SLOCHT |Buurt|Kans|[[Bron NLOG | http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/fcfbc93b-ca40-43f3-8a96-9298d44d1c70]]|
+|Lage Temperatuur Condens ~RestWarmte uit ~KoelProcessen pe rBuurt Oppervlak|LT_WA_OPP|Buurt|GJ/(ha.jaar)|[[Bron RVO | CondenswarmteKoelinstallaties ]]|
+|Totaal Lage Temperatuur Condens ~RestWarmte uit ~KoelProcessen|LT_WA_TJ|Buurt|TJ/jaar|[[Bron RVO | CondenswarmteKoelinstallaties]]|
 
 !Thema's
 Thema beschrijvingen van data die beschikbaar zijn op buurt niveau
