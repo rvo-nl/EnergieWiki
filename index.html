@@ -341,6 +341,8 @@ Error message and password prompt
 
 <li>ConversieEfficienties</li>
 
+<li>Draft of 'BuurtEnergieInfo' by RVO</li>
+
 <li>DuurzaamEnergiePotentieel</li>
 
 <li>EigendomsVerhoudingWoningenPC6</li>
@@ -10116,7 +10118,7 @@ Error message and password prompt
 <div created="20201210095406893" creator="RVO" modified="20201210095406893" modifier="RVO" title="$:/state/plugin-info-334910430-$:/core---1812962263">
 <pre>contents</pre>
 </div>
-<div created="20210323133037549" creator="RVO" modified="20220127113407595" modifier="RVO" title="$:/state/sidebar">
+<div created="20210323133037549" creator="RVO" modified="20211013134826722" modifier="RVO" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20201127162053516" modified="20201208160918400" title="$:/state/tab--1963855381">
@@ -10134,8 +10136,8 @@ Error message and password prompt
 <div created="20201210095723092" creator="RVO" modified="20201210095723092" modifier="RVO" title="$:/state/tab/sidebar--1017963539">
 <pre>TableOfContents</pre>
 </div>
-<div created="20201127161934165" creator="RVO" modified="20220127113401444" modifier="RVO" title="$:/state/tab/sidebar--595412856">
-<pre>TableOfContents</pre>
+<div created="20201127161934165" creator="RVO" modified="20220127110141945" modifier="RVO" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20201129143329634" creator="RVO" modified="20210406155046018" modifier="RVO" title="$:/state/toc/Inhoud-DuurzaamEnergiePotentieel--118161433">
 <pre>open</pre>
@@ -10242,7 +10244,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20220127105954708" creator="RVO" list="Updates" modified="20220127113409976" modifier="RVO" title="$:/StoryList">
+<div created="20220127113932380" creator="RVO" list="[[Draft of 'BuurtEnergieInfo' by RVO]] GemeenteEnergieInfo" modified="20220127113932380" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11374,6 +11376,101 @@ zie [[Athos project|https://athosccus.nl/]]</pre>
 </div>
 <div created="20201207164434361" modified="20201207164501693" tags="EnergieKentallen" title="ConversieEfficienties">
 <pre></pre>
+</div>
+<div changecount="22" created="20150311164100000" creator="RVO" draft.of="BuurtEnergieInfo" draft.title="BuurtEnergieInfo" modified="20220127113942740" modifier="RVO" order="9" tags="RegioEnergieInfo" title="Draft of 'BuurtEnergieInfo' by RVO" type="text/vnd.tiddlywiki">
+<pre>!Overzicht
+
+Een gemeente is opgebouwd uit wijken en een wijk bestaat uit buurten.
+Een overzicht van de gebiedsindeling in Nederland vind u hier.
+[[Gebiedsindeling|https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84721NED/table?ts=1642090441309]]
+
+!Buurt Attributen WarmteAtlas
+
+Volgende Energie Attributen zijn beschikbaar per Buurt voor het Jaartal ''2019''.
+
+* WMS Service ~WarmteAtlas: http://rvo.b3p.nl/geoserver/WarmteAtlas/wms?
+* WFS Service ~WarmteAtlas: http://rvo.b3p.nl/geoserver/WarmteAtlas/wfs?
+* ~KaartLaagnaam: ''~BuurtEnergieInfo'' (alle buurten)
+* ~KaartLaagnaam: ''~WoonKernen'' (buurten met &gt; 20 inwoners/ha die potentieel hebben voor een warmtenet indien een warmtebron aanwezig is)
+
+|Beschrijving|Attribuut Naam|Detail Niveau|Eenheid|Bron|
+|Buurt Code|BU_CODE|Buurt||[[Bron CBS en Kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2019]]|
+|Buurt Naam|BU_NAAM|Buurt||Bron CBS en Kadaster|
+|GemeenteNaam|GM_NAAM|Buurt||Bron CBS en Kadaster|
+|Stedelijkheid|STED|Buurt|klasseindeling|Bron CBS en Kadaster|
+|Aantal huishoudens|AANTAL_HH|Buurt||Bron CBS en Kadaster|
+|Aantal inwoners|AANT_INW|Buurt||Bron CBS en Kadaster|
+|Bevolkings dichtheid|BEV_DICHTH|Buurt|inwoners/km2|Bron CBS en Kadaster|
+|Gemiddeld Huishoudens Grootte|GEM_HH_GR|Buurt||Bron CBS en Kadaster|
+|Gemiddeld aardgasverbruik totaal|G_GAS_TOT|Buurt|m3|Bron CBS en Kadaster|
+|Gemiddeld elektriciteitsverbruik totaal|G_ELEK_TOT|Buurt|kWh|Bron CBS en Kadaster|
+|Gasgebruik per Inwoner|HH_GAS_INW|Buurt|GJ/inwoner|Bron CBS en Kadaster|
+|Elektriciteitsgebruik per Inwoner|HH_EL_INW|Buurt|GJ/inwoner|Bron CBS en Kadaster|
+|CO2emissie Gas Bewoner|HH_C_INW|Buurt|kg/jaar|Bron CBS en Kadaster|
+|Totaal Huishoudelijk Gasgebruik|HH_GAS_TJ|Buurt|TJ/jaar|Bron CBS en Kadaster|
+|Totaal Huishoudelijk Elektriciteitsgebruik|HH_EL_TJ|Buurt|TJ/jaar|Bron CBS en Kadaster|
+|Gasgebruik Huishoudens per opp|HH_GAS_OPP|Buurt|GJ/(ha.jaar)|Bron CBS en Kadaster|
+|Aantal Autos|AUTO_HH|Buurt||Bron CBS en Kadaster|
+|Aantal Autos per Huishouden|AUTO_TOT|Buurt||Bron CBS en Kadaster|
+|Oppervlakte Totaal|OPP_LAND|Buurt|ha|Bron CBS en Kadaster|
+|Oppervlakte Land|OPP_TOT|Buurt|ha|Bron CBS en Kadaster|
+|Oppervlakte Water|OPP_WATER|Buurt|ha|Bron CBS en Kadaster|
+|Percentage Huur Corporaties|P_HUURCORP|Buurt||Bron CBS en Kadaster|
+|Percentage Overige Verhuurders|P_HUUROVVH|Buurt||Bron CBS en Kadaster|
+|Percentage Huurwoningen|P_HUURWON|Buurt||Bron CBS en Kadaster|
+|Percentage Koopwoningen|P_KOOPWON|Buurt||Bron CBS en Kadaster|
+|Percentage Leegstand|P_LEEGSW|Buurt||Bron CBS en Kadaster|
+|Percentage Stadsverwarming *2|P_STADVERW|Buurt||Bron CBS en Kadaster|
+|Percentage Woningen bouwjaar tot 2000|P_WONT2000|Buurt||Bron CBS en Kadaster|
+|Percentage Woningen bouwjaar vanaf 2000|P_WONV2000|Buurt||Bron CBS en Kadaster|
+|Aantal Woningen|WONINGEN|Buurt||Bron CBS en Kadaster|
+|Gemiddelde WoningWaarde|WOZ|Buurt|x1000euro|Bron CBS en Kadaster|
+|Potentieel Koude Opslag door gesloten bodemsystemen|GS_KOUD|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
+|Potentieel Warmte Opslag door gesloten bodemsystemen|GS_WARM|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
+|Potentieel Koude Opslag door open bodemsystemen|OS_KOUD|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
+|Potentieel Warmte Opslag door open bodemsystemen|OS_WARM|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
+|Kans Aardwarmte Krijt-Jura reservoir |GT_KRIJT |Buurt|Kans|[[Bron NLOG|http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/76cf70ff-2498-4e77-b9f6-7e5c8707953e]]|
+|Kans Aardwarmte Trias reservoir |GT_TRIAS |Buurt|Kans|[[Bron NLOG|http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/24fb53ff-83eb-45af-b9f2-e7b4ae31c0c2]]|
+|Kans Aardwarmte Slochteren reservoir |GT_SLOCHT |Buurt|Kans|[[Bron NLOG|http://nlog.nl/cmis/browser?id=workspace%3A//SpacesStore/fcfbc93b-ca40-43f3-8a96-9298d44d1c70]]|
+|Lage Temperatuur Condens ~RestWarmte uit ~KoelProcessen per Buurt Oppervlak *1|LT_WA_OPP|Buurt|GJ/(ha.jaar)|[[Bron RVO|CondenswarmteKoelinstallaties ]]|
+|Totaal Lage Temperatuur Condens ~RestWarmte uit ~KoelProcessen *1|LT_WA_TJ|Buurt|TJ/jaar|[[Bron RVO|CondenswarmteKoelinstallaties]]|
+| - ''Type Hoofdverwarmingsinstallatie per buurt'' - | | | | |
+|Individuele cv|IND_CV| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+|Blokverwarming|BLOK| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+|Stadsverwarming met hoog gasverbruik|STAD_HG| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+|Stadsverwarming met laag gasverbruik|STAD_LG| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+|Stadsverwarming zonder gasverbruik|STAD_ZG| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+|Elektrisch verwarmd met hoog gasverbruik|EL_HG| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+|Elektrisch verwarmd met laag gasverbruik|EL_LG| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+|Elektrisch verwarmd zonder gasverbruik|El_ZG| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+|Type installaties onbekend|HVI_ONB| Buurt|%|[[ Bron CBS|https://opendata.cbs.nl/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84983NED&amp;_theme=276]]|
+
+# Restwarmtegegevens uit Condens en Koelwater dateren uit 2017. [[KWA; Warmte van koelinstallaties in beeld in de warmteatlas en potentiele toepassingen|https://docplayer.nl/129808564-Warmte-van-koelinstallaties-in-beeld-in-de-warmteatlas-en-potentiele-toepassingen.html]]
+# Percentage stadsverwarming (niet geleverd door CBS)  Nieuw is het type hoofdverwarmingsinstallatie per buurt
+
+!Klassificaties
+
+Stedelijkheid:
+
+* 1. zeer sterk stedelijk   ≥ 2500 adressen per km²
+* 2. sterk stedelijk    1500–2500 adressen per km²
+* 3. matig stedelijk  1000–1500 adressen per km²
+* 4. weinig stedelijk  500–1000 adressen per km²
+* 5. niet stedelijk   &lt; 500  adressen per km²
+
+!Berekende velden:
+De volgende kolommen zijn toegevoegd.  ( HH_GAS_TJ, HH_GAS_OPP, HH_GAS_INW, HH_EL_TJ, HH_EL_INW,). 
+Deze zijn berekend op basis van G_GAS_TOT of G_ELEK_TOT * woningen, omgerekend naar TJoules (per inwoner of ha.) 
+
+
+Voor de berekening van de CO2-emissie per bewoner ( HH_C_INW ) is de standaard [[CO2-emissiefactor|https://www.rvo.nl/sites/default/files/2021/05/Berekening%20van%20de%20standaard%20CO2-emissiefactor%20aardgas%202021_0.pdf]] aardgas van 56,8 kg/GJ gebruikt.  G_GAS_TOT  * WONINGEN)*31.65/1000)/AANT_INW*56.4 kgCO2/GJ  
+
+!Thema's
+Thema beschrijvingen van data die beschikbaar zijn op buurt niveau
+Gegevens die beschikbaar zijn op buurt niveau:
+
+* [[Uitgebreide toelichting op de wijk en buurtkaart|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2019]]
+* [[CBS: Toelichting Wijk- en Buurtkaart 2017, 2018 en 2019|https://www.cbs.nl/nl-nl/longread/aanvullende-statistische-diensten/2020/toelichting-wijk-en-buurtkaart-2018-2019-en-2020]]</pre>
 </div>
 <div changecount="9" created="20150311151500000" modified="20201208135218147" modifier="RVO" order="4" tags="Inhoud" title="DuurzaamEnergiePotentieel" type="text/vnd.tiddlywiki">
 <pre>|!Hoogte/Diepte (m)|&gt;|&gt;|&gt;|!Warmte productie|!Stroom productie|
@@ -12937,7 +13034,7 @@ Volgende Energie attributen zijn beschikbaar per Gemeente voor Jaartal ''2018''
 !Thema's
 Thema beschrijvingen die beschikbaar zijn op gemeente niveau:</pre>
 </div>
-<div created="20201203111941154" creator="RVO" modified="20220127113337005" modifier="RVO" tags="Gemeente" title="GemeenteEnergieInfo">
+<div created="20201203111941154" creator="RVO" modified="20220127114055991" modifier="RVO" tags="Gemeente" title="GemeenteEnergieInfo">
 <pre>!Overzicht 
 Een overzicht van de gemeentelijke gebiedsindeling  vind u hier. &lt;br&gt;
 [[Gebiedsindeling 2018|https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83859NED/table?dl=1ACD3]] &lt;br&gt;
@@ -12994,11 +13091,11 @@ Volgende meest recente Energie attributen zijn beschikbaar per Gemeente voor Jaa
 !Klassificaties
 Stedelijkheid:
 
-1. zeer sterk stedelijk ≥ 2500 adressen per km²
-2. sterk stedelijk 1500–2500 adressen per km²
-3. matig stedelijk 1000–1500 adressen per km²
-4. weinig stedelijk 500–1000 adressen per km²
-5. niet stedelijk &lt; 500 adressen per km²
+* 1. zeer sterk stedelijk ≥ 2500 adressen per km²
+* 2. sterk stedelijk   1500–2500 adressen per km²
+* 3. matig stedelijk 1000–1500 adressen per km²
+* 4. weinig stedelijk 500–1000 adressen per km²
+* 5. niet stedelijk  &lt; 500 adressen per km²
 
 !Thema's
 Thema beschrijvingen die beschikbaar zijn op gemeente niveau:</pre>
@@ -14170,23 +14267,23 @@ Elk rondje geeft een project weer. Hoe groter het rondje, hoe hoger het vermogen
 <div created="20210121172926811" creator="RVO" modified="20210121172944112" modifier="RVO" tags="" title="Test">
 <pre>Dit is een test</pre>
 </div>
-<div created="20220114122749574" creator="RVO" modified="20220127113635617" modifier="RVO" tags="Inhoud" title="Updates">
+<div created="20220114122749574" creator="RVO" modified="20220114132750166" modifier="RVO" tags="Inhoud" title="Updates">
 <pre>!Toelichting
 Overzicht van bijgewerkte datasets. De laatst bijgewerkte dataset staat bovenaan in de lijst.
 
 |Laagnaam|Actualiteit gegevens|Update date|Opmerking|
-|[[GemeenteEnergieInfo]] |2019|jan 2022||
-|[[BuurtEnergieInfo]] |2019|jan 2022||
-|BuurtEnergieInfo |2018|mei 2019|als wfs service beschikbaar|
-|[[AardwarmteVergunningen]] |dec 2021|dec 2021|WFS kan 'achterlopen' op WMS |
+|[[BuurtEnergieInfo]] |2019|jan 2021||
+|BuurtEnergieInfo |2018|mei 2019|alleen als wfs service beschikbaar|
 |[[AardwarmteVergunningen]] |Actueel|okt 2020|WMS is actuele stand van zaken |
+|[[AardwarmteVergunningen]] |dec 2021|dec 2020|WFS kan 'achterlopen' op WMS |
 |[[CO2emissieETSbedrijven]] |2020|juli 2021||
-|[[SDE_Warmte]]|jun2021]] |juli 2021||
-|[[SDE_Elektra]]|jun 2021]] |jul 2021|als wfs-service beschikbaar|
+|[[SDE_Warmte]]|jun2021]] |juli 2020||
+|[[SDE_Elektra]]|jun 2021]] |jul 2021|alleen als wfs-service beschikbaar|
 
 Overzicht van datasets die binnenkort beschikbaar komen in de WarmteAtlas
 
 |Laagnaam|Actualiteit gegevens|Verwachte Update date|Opmerking|
+|[[GemeenteEnergieInfo]] |2019|eind jan 2022||
 |[[BuurtEnergieInfo]] |2020|feb 2022||
 |[[GroteStookInstallaties]] |2021|feb 2022||
 
