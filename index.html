@@ -10242,7 +10242,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20220224095217939" creator="RVO" list="Kassen Glastuinbouw" modified="20220224095657634" modifier="RVO" title="$:/StoryList">
+<div created="20220224095217939" creator="RVO" list="Kassen Glastuinbouw" modified="20220224161837302" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -13510,11 +13510,13 @@ In de WKO-tool is de gesloten bodemenergiesystemen (GBES) laag opgebouwd uit de 
 Installaties kunnen gebruikt worden voor __[[bodemlussen|WKO_Bodemlussen]]__, grondwaterontrekkingen en open bodemsystemen.
 </pre>
 </div>
-<div created="20201210123105268" creator="RVO" modified="20220224155239244" modifier="RVO" tags="LocatieInfo Glastuinbouw" title="Kassen">
+<div created="20201210123105268" creator="RVO" modified="20220224162802631" modifier="RVO" tags="LocatieInfo Glastuinbouw" title="Kassen">
 <pre>zie [[Glastuinbouw]]
 
 !Actualiteit
-oktober 2021
+publicatiedatum november 2021 &lt;br&gt;
+[[BRT-actualiteit |https://www.kadaster.nl/zakelijk/zoeken?p_p_id=KadasterSearchPortlet&amp;p_p_lifecycle=1&amp;p_auth=zpx1EnP0&amp;_KadasterSearchPortlet_javax.portlet.action=%2Fsearch%2Fexecute&amp;_KadasterSearchPortlet_keywords=actualiteitskaart]] van de top10-kaart:  2020. 
+ 
 
 !Beschrijving kaart Kassen
 De gegevens van de kaart Kassen zijn afkomstig van het [[Top10NL |https://www.pdok.nl/downloads/-/article/basisregistratie-topografie-brt-topnl]]
@@ -13528,10 +13530,16 @@ De gegevens van de kaart Kassen zijn afkomstig van het [[Top10NL |https://www.pd
 					&lt;tbody&gt; 
 						&lt;tr&gt;&lt;td&gt;bronactualiteit&lt;/td&gt;					&lt;td&gt;[bronactual]&lt;/td&gt;	&lt;td&gt;&lt;/td&gt;			&lt;/tr&gt;
 						&lt;tr&gt;&lt;td&gt;oppervlakte&lt;/td&gt;						&lt;td&gt;[opp_m2]&lt;/td&gt;	&lt;td&gt;m2&lt;/td&gt;			&lt;/tr&gt;
+						&lt;tr&gt;&lt;td&gt;inschatting gas gebruik&lt;/td&gt;				&lt;td&gt;[gas_m3]&lt;/td&gt;	&lt;td&gt;m3 gas&lt;/td&gt;		&lt;/tr&gt;
+						&lt;tr&gt;&lt;td&gt;inschatting gas gebruik in GJ&lt;/td&gt;		&lt;td&gt;[gas_GJ]&lt;/td&gt;		&lt;td&gt;GJ&lt;/td&gt;			&lt;/tr&gt;
 						&lt;tr&gt;&lt;td&gt;inschatting gas gebruik per m2&lt;/td&gt;		&lt;td&gt;[warmte_m3]&lt;/td&gt;	&lt;td&gt;m3 gas/m2&lt;/td&gt;	&lt;/tr&gt;
 						&lt;tr&gt;&lt;td&gt;inschatting warmte gebruik totale gas&lt;/td&gt;	&lt;td&gt;[warmte_GJ]&lt;/td&gt;	&lt;td&gt;GJ&lt;/td&gt;			&lt;/tr&gt;
 					 &lt;/tbody&gt;
-                    &lt;/table&gt;</pre>
+                    &lt;/table&gt;
+
+!Berekende velden:
+De volgende kolommen zijn toegevoegd.  ( gas_m3, warmte_m3, warmte_GJ). &lt;br&gt;
+Deze zijn berekend op basis van:  gas_m3 = opp_m2*30m3/m2, gas_GJ = (gas_m3*31.65/1000,0), warmte_m3 = (opp_m2*30),  warmte_GJ = (warmte_m3*31.65/1000)</pre>
 </div>
 <div created="20201210092425981" creator="RVO" modified="20201211100153820" modifier="RVO" tags="EnergieKentallen" title="KostenKentallen">
 <pre>! KostenKentallen over CO2 afvang, transport en opslag
