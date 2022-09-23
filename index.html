@@ -279,6 +279,8 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/temp/advancedsearch</li>
+
 <li>$:/temp/info-plugin</li>
 
 <li>$:/temp/NewTagName</li>
@@ -10136,7 +10138,7 @@ Error message and password prompt
 <div created="20201210095723092" creator="RVO" modified="20201210095723092" modifier="RVO" title="$:/state/tab/sidebar--1017963539">
 <pre>TableOfContents</pre>
 </div>
-<div created="20201127161934165" creator="RVO" modified="20220923123916768" modifier="RVO" title="$:/state/tab/sidebar--595412856">
+<div created="20201127161934165" creator="RVO" modified="20220923132028758" modifier="RVO" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20201129143329634" creator="RVO" modified="20210406155046018" modifier="RVO" title="$:/state/toc/Inhoud-DuurzaamEnergiePotentieel--118161433">
@@ -10244,7 +10246,10 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20220923112954655" creator="RVO" list="" modified="20220923124149515" modifier="RVO" title="$:/StoryList">
+<div created="20220923112954655" creator="RVO" list="AquathermieOpenWater" modified="20220923132145516" modifier="RVO" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20220923130659629" creator="RVO" modified="20220923130713929" modifier="RVO" title="$:/temp/advancedsearch">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10308,8 +10313,8 @@ Error message and password prompt
 <div created="20201203110552274" creator="RVO" modified="20210323153145915" modifier="RVO" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20201127162137430" creator="RVO" modified="20220419135753375" modifier="RVO" title="$:/temp/search">
-<pre>condenswarmte</pre>
+<div created="20201127162137430" creator="RVO" modified="20220923130659629" modifier="RVO" title="$:/temp/search">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -10771,58 +10776,65 @@ Jaar: &lt;font color=&quot;0000FF&quot;&gt;2015&lt;/font&gt;&lt;br&gt;&lt;br&gt;
 &lt;/tbody&gt;
  &lt;/table&gt;</pre>
 </div>
-<div created="20210323144634654" creator="RVO" modified="20220923130643971" modifier="RVO" tags="Omgevingswarmte" title="AquathermieOpenWater">
+<div created="20210323144634654" creator="RVO" modified="20220923134854709" modifier="RVO" tags="Omgevingswarmte" title="AquathermieOpenWater">
 <pre>!Wat is Aquathermie
 | &lt;html&gt; &lt;div style=&quot;float:left; width:600px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/506237b0-5552-4d0b-bc4d-089e218ce109/1547128590aquathermie.jpg]] &lt;/div&gt; &lt;/html&gt;|&lt;html&gt; &lt;div style= vertical-align:top;padding:1em;&gt; Oppervlaktewater is – naast wind, zon en biomassa – een potentieel belangrijke duurzame energiebron voor Nederland. Uit een verkenning in opdracht van de Unie van Waterschappen en Rijkswaterstaat blijkt dat deze bron kan voorzien in ± 12% van de nationale warmtevraag en 54% van de koudevraag. In het waterrijke noorden westen en midden van het land loopt de potentie op tot meer dan 25% van de warmtevraag, vooral in de dichtbebouwde regio’s. Daarmee vormt deze bron een bijdrage in het streven van gemeenten naar aardgasloze wijken. Het oppervlaktewater van sloten en kanalen kan in combinatie met warmte en koude opslagsystemen (WKO) worden ingezet voor het duurzaam verwarmen en/of koelen van gebouwen. Het water van “diepe” plassen kan worden ingezet voor het duurzaam koelen van gebouwen. In de smart polder worden kunstwerken (met name gemalen) voorzien van warmtewisselaars waarmee deze ingezet kunnen worden voor het leveren van primaire koude of warmte. &lt;/div&gt;&lt;/html&gt;|
 
 
 !Beschrijving Techniek
-TEO (Thermische Energie Oppervlaktewater) maakt gebruik van de temperatuurverschillen van het oppervlaktewater in de loop van de seizoenen (zie afbeelding boven). In de zomer kan met warm oppervlaktewater het grondwater in een Warmte- en Koudeopslag –installatie (WKO) worden opgewarmd. Deze warmte kan in het koude seizoen worden benut om met behulp van een warmtepomp gebouwen te verwarmen. In de winter kan juist koude worden opgeslagen. Deze koude is dan een bron voor duurzame koeling. In sommige gevallen kan zonder WKO direct warmte of koude worden geleverd, bijvoorbeeld bij koude winning uit diepe plassen. Er zijn 3 techniek concepten volgens IF Technology.
-
+TEO (Thermische Energie Oppervlaktewater) maakt gebruik van de temperatuurverschillen van het oppervlaktewater in de loop van de seizoenen (zie afbeelding boven). In de zomer kan met warm oppervlaktewater het grondwater in een Warmte- en Koudeopslag –installatie (WKO) worden opgewarmd. Deze warmte kan in het koude seizoen worden benut om met behulp van een warmtepomp gebouwen te verwarmen. In de winter kan juist koude worden opgeslagen. Deze koude is dan een bron voor duurzame koeling. In sommige gevallen kan zonder WKO direct warmte of koude worden geleverd, bijvoorbeeld bij koude winning uit diepe plassen. Er zijn 3 techniek concepten volgens IF Technology. &lt;br&gt;
+&lt;br&gt;
 
 !!Concepten energie uit het watersysteem
-# I.	''Waterlopen &amp; plassen''
+!!!! ''I.	''Waterlopen &amp; plassen''''
 Het oppervlaktewater van sloten en kanalen kan in combinatie met warmte en koude opslagsystemen (WKO) worden ingezet voor het duurzaam verwarmen en/of koelen van gebouwen. Hiervoor zal een pompinstallatie in de nabijheid van de afnemer worden geplaatst waarmee met een klein temperatuursverschil (3 tot 6oC) energie uit het water wordt gewonnen. Door deze pompinstallatie slim te integreren in het bestaande watersysteem kunnen voordelen worden behaald in waterkwaliteit (doorspoeling en afkoeling)&lt;br&gt;
 
-# II.	''Diepe plassen''
+!!!! ''II.	''Diepe plassen''''
 Het water van “diepe”plassen kan worden ingezet voor het duurzaam koelen van gebouwen. Het koude water uit de diepe van een plas blijft geïsoleerd en biedt hiermee een duurzame bron van koeling. &lt;br&gt;
 
-# III.	''Gemalen''
+!!!!'' III.	''Gemalen''''
 In de smart polder worden kunstwerken (met name gemalen) voorzien van warmtewisselaars waarmee deze ingezet kunnen worden voor het leveren van primaire koude of warmte. Hiermee kan met een kleine investering een zeer hoog koel of verwarming vermogen worden gecreëerd. Voorwaarde is wel dat er afnemers van warmte of koude in de nabijheid van een gemaal aanwezig zijn.  &lt;br&gt;
-
+&lt;br&gt;
+&lt;br&gt;
 
 !Beschrijving potentieel kaarten
 !!Potentiële voorraad 
 De hoeveelheid energie die in het natuurlijk watersysteem zit en in theorie benut kan worden. 
+&lt;br&gt;
 
 !!Technisch winbaar potentieel
 De potentiële voorraad die op basis van de huidige technische mogelijkheden uit een waterlichaam kan worden gewonnen.
-De beschikbare opslagcapaciteit van de ondergrond voor de toepassing van energieopslag vormt hierin een bepalende factor. Als deze kleiner is dan de potentiële energielevering uit het watersysteem, beperkt dit het potentieel.
-__Rekenregels__:
-Potentiële energievoorraad &lt; Capaciteit ondergrond, Potentiële energievoorraadleidend; 
-Potentiële energievoorraad &gt; Capaciteit ondergrond, Capaciteit ondergrondleidend. 
+De beschikbare opslagcapaciteit van de ondergrond voor de toepassing van energieopslag vormt hierin een bepalende factor. Als deze kleiner is dan de potentiële energielevering uit het watersysteem, beperkt dit het potentieel.&lt;br&gt;
+''__Rekenregels__:'' &lt;br&gt;
+* Potentiële energievoorraad &lt; Capaciteit ondergrond, Potentiële energievoorraadleidend; &lt;br&gt;
+* Potentiële energievoorraad &gt; Capaciteit ondergrond, Capaciteit ondergrondleidend.  &lt;br&gt;
+&lt;br&gt;
 
 !!Economisch winbaar potentieel
-Het technisch potentieel gecorrigeerd voor financiële haalbaarheidaspecten,
-__Rekenregels__:
--Er geldt een minimaal vereiste energievraag/-aanbod van 1.000 GJ/ha/j
--De energievrager bevindt zich voldoende nabij het watersysteem (&lt; 1 km)
--De grootte van de energievraag in combinatie met de grootte van het technisch potentieel levert een geschiktheidswaardering:
-
-&lt;html&gt;&lt;IMG hspace=1 vspace=1 src=&quot;https://www.pleio.nl/file/download/60283981/Aquathermie_Technisch_Potentieel.jpg&quot; width=&quot;500&quot; /&gt;&lt;/html&gt;
-
+Het technisch potentieel gecorrigeerd voor financiële haalbaarheidaspecten, &lt;br&gt;
+''__Rekenregels__:''  &lt;br&gt;
+* Er geldt een minimaal vereiste energievraag/-aanbod van 1.000 GJ/ha/j  &lt;br&gt;
+* De energievrager bevindt zich voldoende nabij het watersysteem (&lt; 1 km)  &lt;br&gt;
+* De grootte van de energievraag in combinatie met de grootte van het technisch potentieel levert een geschiktheidswaardering:  &lt;br&gt;
+&lt;html&gt;&lt;div style=&quot;float:left; width:500px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/ef849823-d0ae-4603-b0ed-493a38921846/1547129589aquathermie_technisch_potentieel.jpg]] &lt;/div&gt;&lt;/html&gt;
+&lt;br&gt;
 
 !!Economisch  winbaar potentieel – koude / warmte levering uit waterlopen en plassen
 &lt;html&gt;&lt;IMG hspace=1 vspace=1 src=&quot;https://www.pleio.nl/file/download/60283971/Aquathermie_WaterlopenPlassen_Economisch_Potentieel.jpg&quot; width=&quot;300&quot; /&gt;&lt;/html&gt;
+&lt;br&gt;
 
 !!Economisch  winbaar potentieel - Koude levering uit diepeplassen
 &lt;html&gt;&lt;IMG hspace=1 vspace=1 src=&quot;https://www.pleio.nl/file/download/60284151/Aquathermie_DiepePlassen_Koude_Economisch_Potentieel.jpg&quot; width=&quot;300&quot; /&gt;&lt;/html&gt;
+&lt;br&gt;
 
 !!Economisch  winbaar potentieel - Warmtelevering uit gemalen
 &lt;html&gt;&lt;IMG hspace=1 vspace=1 src=&quot;https://www.pleio.nl/file/download/60283991/Aquathermie_Gemalen_Warmte_Economisch_Potentieel.jpg&quot; width=&quot;300&quot; /&gt;&lt;/html&gt;
+&lt;br&gt;
 
 !!Economisch  winbaar potentieel - Koude levering uit gemalen
 &lt;html&gt;&lt;IMG hspace=1 vspace=1 src=&quot;https://www.pleio.nl/file/download/60283961/Aquathermie_Gemalen_Koude_Economisch_Potentieel.jpg&quot; width=&quot;300&quot; /&gt;&lt;/html&gt;
+&lt;br&gt;
+&lt;br&gt;
 
 !De berekening energiepotentielen van de verschillende concepten
 !!Concept I: Waterlopen en plassen
@@ -10887,6 +10899,7 @@ __Berekening technisch winbaar potentieel__
 __Berekening economisch winbaar potentieel__
 &gt;Afnemers &lt; 1000 GJ/ha vallen af
 &gt;Totale vraag binnen 1 km
+&lt;br&gt;
 
 !!Concept III. Gemalen
 __Uitgangspunten koudewinning (winterperiode)__
@@ -10922,7 +10935,7 @@ __Aannames berekening economisch winbaar potentieel__
 &gt;Kleinste: koudelevering of opslag
 
 __Bron__: Landelijke verkenning warmte en koude uit het watersysteem, IF Technology Onderzoek potentieel warmte-koudeopslag Waterschappen 2016,  In opdracht van de Unie van Waterschappen en Rijkswaterstaat 
-
+&lt;br&gt;
 
 
 !Hoe kom ik verder?
