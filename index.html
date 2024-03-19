@@ -10248,7 +10248,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20240319140752944" creator="RVO" list="BuurtEnergieInfo" modified="20240319141019314" modifier="RVO" title="$:/StoryList">
+<div created="20240319140752944" creator="RVO" list="GemeenteEnergieInfo BuurtEnergieInfo" modified="20240319143248261" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220923130659629" creator="RVO" modified="20240313110410118" modifier="RVO" title="$:/temp/advancedsearch">
@@ -11412,15 +11412,15 @@ Bodemenergie is gebruikmaken van de bodem om warmte en koude aan te onttrekken e
 * Project: [[Individuele WKO buurt Schalkwijk Etten-Leur |https://bodemenergie.nl/wijk-schoenmakershoek-1-500-woningen-al-15-jaar-gasloos-met-warmtepomp-en-bodemenergie/]]
 * RVO: [[factsheet bodemenergie|https://www.expertisecentrumwarmte.nl/themas/technische+oplossingen/techniekfactsheets+energiebronnen/bodemenergie+en+wko/default.aspx]]</pre>
 </div>
-<div changecount="22" created="20150311164100000" creator="RVO" modified="20240319143109426" modifier="RVO" order="9" tags="RegioEnergieInfo" title="BuurtEnergieInfo" type="text/vnd.tiddlywiki">
+<div changecount="22" created="20150311164100000" creator="RVO" modified="20240319144137710" modifier="RVO" order="9" tags="RegioEnergieInfo" title="BuurtEnergieInfo" type="text/vnd.tiddlywiki">
 <pre>!Beschrijving
 De CBS Wijk- en Buurtkaart 2022 versie 2 is de basis voor dit bestand. Het bevat de digitale geometrie van de grenzen van de buurten. Een selectie van velden, die van belang zijn voor de energietransitie, zijn opgenomen uit de CBS kerncijfers van de buurt en de geaggregeerde kerncijfers. Daarnaast zijn gegevens over het potentieel uit  WKO systemen en het potentieel voor Aardwarmte aan de kaart toegevoegd. &lt;br&gt; 
 
 !Actualiteit
 Volgende Energie Attributen zijn beschikbaar per Buurt voor het Jaartal ''2022''.
 
-* WMS Service ~WarmteAtlas: http://rvo.b3p.nl/geoserver/WarmteAtlas/wms?
-* WFS Service ~WarmteAtlas: http://rvo.b3p.nl/geoserver/WarmteAtlas/wfs?
+* WMS Service ~WarmteAtlas: http://www.warmteatlas.nl/geoserver/WarmteAtlas/wms?
+* WFS Service ~WarmteAtlas: http://www.warmteatlas.nl/geoserver/WarmteAtlas/wfs?
 * KaartLaagnaam: ''BuurtEnergieInfo'' (alle buurten)
 * KaartLaagnaam: ''WoonKernen'' (buurten met &gt; 20 inwoners/ha die potentieel hebben voor een warmtenet indien een warmtebron aanwezig is)
 
@@ -11448,14 +11448,14 @@ Volgende Energie Attributen zijn beschikbaar per Buurt voor het Jaartal ''2022''
 |Oppervlakte Totaal|OPP_LAND|Buurt|ha|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
 |Oppervlakte Land|OPP_TOT|Buurt|ha|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
 |Oppervlakte Water|OPP_WATER|Buurt|ha|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
-|Percentage Huur Corporaties|P_HUURCORP|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
-|Percentage Overige Verhuurders|P_HUUROVVH|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
-|Percentage Huurwoningen|P_HUURWON|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
-|Percentage Koopwoningen|P_KOOPWON|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
-|Percentage Leegstand|P_LEEGSW|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
-|Percentage Stadsverwarming *2|P_STADVERW|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/cijfers/detail/85697NED]]|
-|Percentage Woningen bouwjaar tot 2000|P_WONT2000|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
-|Percentage Woningen bouwjaar vanaf 2000|P_WONV2000|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
+|Percentage Huur Corporaties|P_HUURCORP|Buurt|%|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
+|Percentage Overige Verhuurders|P_HUUROVVH|Buurt|%|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
+|Percentage Huurwoningen|P_HUURWON|Buurt|%|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
+|Percentage Koopwoningen|P_KOOPWON|Buurt|%|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
+|Percentage Leegstand|P_LEEGSW|Buurt|%|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
+|Percentage Stadsverwarming *2|P_STADVERW|Buurt|%|[[Bron CBS|https://www.cbs.nl/nl-nl/cijfers/detail/85697NED]]|
+|Percentage Woningen bouwjaar tot 2000|P_WONT2000|Buurt|%|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
+|Percentage Woningen bouwjaar vanaf 2000|P_WONV2000|Buurt|%|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
 |Aantal Woningen|WONINGEN|Buurt||[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
 |Gemiddelde WoningWaarde|WOZ|Buurt|x1000euro|[[Bron CBS|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]|
 |Potentieel Koude Opslag door gesloten bodemsystemen|GS_KOUD|Buurt|GJ/(ha.jaar)|[[Bron RVO | Bodemopslag warmte en koude ]]|
@@ -13228,14 +13228,14 @@ Volgende Energie attributen zijn beschikbaar per Gemeente voor Jaartal ''2018''
 !Thema's
 Thema beschrijvingen die beschikbaar zijn op gemeente niveau:</pre>
 </div>
-<div created="20201203111941154" creator="RVO" modified="20230425145343999" modifier="RVO" tags="Gemeente" title="GemeenteEnergieInfo">
+<div created="20201203111941154" creator="RVO" modified="20240319144341075" modifier="RVO" tags="Gemeente" title="GemeenteEnergieInfo">
 <pre>!Beschrijving
-De CBS Wijk- en Buurtkaart 2020 versie 2 is de basis voor dit bestand. Het bevat de digitale geometrie van de grenzen van de gemeenten. Een selectie van velden, die van belang zijn voor de energietransitie, zijn opgenomen uit de CBS kerncijfers van de gemeenten en de geaggregeerde kerncijfers. Daarnaast zijn gegevens over het potentieel vermogen uit Biomassa, Biogas en duurzame warmte potentieel uit Aardwarmte aan de kaart toegevoegd. De oppervlakte bos is afgeleid van de laatste versie van het 'Bestand BodemGebruik' versie 2017.
+De CBS Wijk- en Buurtkaart 2022 versie 2 is de basis voor dit bestand. Het bevat de digitale geometrie van de grenzen van de gemeenten. Een selectie van velden, die van belang zijn voor de energietransitie, zijn opgenomen uit de CBS kerncijfers van de gemeenten en de geaggregeerde kerncijfers. Daarnaast zijn gegevens over het potentieel vermogen uit Biomassa, Biogas en duurzame warmte potentieel uit Aardwarmte aan de kaart toegevoegd. De oppervlakte bos is afgeleid van de laatste versie van het 'Bestand BodemGebruik' versie 2020.
 
 ! Actualiteit van de data
-Volgende meest recente Energie attributen zijn beschikbaar per Gemeente voor Jaartal 2020 &lt;br&gt;
-* WMS Service WarmteAtlas: http://rvo.b3p.nl/geoserver/WarmteAtlas/wms? &lt;br&gt;
-* WFS Service WarmteAtlas: http://rvo.b3p.nl/geoserver/WarmteAtlas/wfs? &lt;br&gt;
+Volgende  Energie attributen zijn beschikbaar per Gemeente voor Jaartal 2022 &lt;br&gt;
+* WMS Service WarmteAtlas: http://www.warmteatlas.nl/geoserver/WarmteAtlas/wms? &lt;br&gt;
+* WFS Service WarmteAtlas: http://www.warmteatlas.nl/geoserver/WarmteAtlas/wfs? &lt;br&gt;
 * KaartLaagnaam: ''GemeenteEnergieInfo'' &lt;br&gt;
 
 !OPM
@@ -13244,21 +13244,21 @@ De velden  Gas gebruik Huishoudens Totaal  en  Elektriciteits gebruik Huishouden
 !Gemeente Attributen WarmteAtlas
 
 |Beschrijving |  Attribuur naam | Detail Niveau | Eenheid |DownloadLink|h
-|Gemeente Code|GM_CODE |Gemeente||[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Gemeente Naam|GM_NAAM |Gemeente||[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Bevolkingsdichtheid|BEV_DICHTH |Gemeente|Inwoners/km2|[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Aantal inwoners|AANT_INW|Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Aantal huishoudens |AANTAL_HH|Gemeente||[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Woningvoorraad|WONINGEN|Gemeente||[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Gemiddelde woningwaarde |WOZ|Gemeente||[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Percentage Koopwoningen |P_KOOPWON|Gemeente||[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Percentage Huurwoningen |P_HUURWON|Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Percentage Woningen bouwjaar tot 2000 |P_WONT2000 |Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Percentage Woningen bouwjaar vanaf 2000|P_WONV2000|Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Percentage Leegstand |P_LEEGSW|Gemeente||[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Percentage Stadsverwarming |P_STADVERW |Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Aantal Autos |AUTO_TOT|Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Aantal Autos per Huishouden|AUTO_HH|Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
+|Gemeente Code|GM_CODE |Gemeente||[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Gemeente Naam|GM_NAAM |Gemeente||[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Bevolkingsdichtheid|BEV_DICHTH |Gemeente|Inwoners/km2|[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Aantal inwoners|AANT_INW|Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Aantal huishoudens |AANTAL_HH|Gemeente||[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Woningvoorraad|WONINGEN|Gemeente||[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Gemiddelde woningwaarde |WOZ|Gemeente||[[Bron CBS en Kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Percentage Koopwoningen |P_KOOPWON|Gemeente|%|[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Percentage Huurwoningen |P_HUURWON|Gemeente|%|[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Percentage Woningen bouwjaar tot 2000 |P_WONT2000 |Gemeente|%|[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Percentage Woningen bouwjaar vanaf 2000|P_WONV2000|Gemeente|%|[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Percentage Leegstand |P_LEEGSW|Gemeente|%|[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Percentage Stadsverwarming |P_STADVERW |Gemeente|%|[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Aantal Autos |AUTO_TOT|Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Aantal Autos per Huishouden|AUTO_HH|Gemeente||[[Bron CBS en kadaster |https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
 |Gas gebruik Huishoudens Totaal |HH_GAS_TJ |Gemeente|TJ/jaar|[[Bron CBS |http://statline.cbs.nl/StatWeb/selection/?DM=SLNL&amp;PA=82538NED&amp;VW=T]]|
 |Gas gebruik Utiliteitsbouw Totaal|UTB_GAS_TJ |Gemeente|TJ/jaar|[[Bron CBS |http://statline.cbs.nl/StatWeb/selection/?DM=SLNL&amp;PA=82538NED&amp;VW=T]]|
 |Gas gebruik Landbouw (mn Glastuinbouw) Totaal|LB_GAS_TJ|Gemeente|TJ/jaar|[[Bron CBS |http://statline.cbs.nl/StatWeb/selection/?DM=SLNL&amp;PA=82538NED&amp;VW=T]]|
@@ -13281,10 +13281,10 @@ De velden  Gas gebruik Huishoudens Totaal  en  Elektriciteits gebruik Huishouden
 |Potentieel Biogas uit Mest|BG_MSTV_TJ |Gemeente|TJ/jaar|[[Bron RVO |Biogas ]]|
 |Potentieel Biogas Totaal |BG_TOT_TJ |Gemeente|TJ/jaar|[[Bron RVO |Biogas ]]|
 |Potentieel Biogas Totaal per opp |BG_TOT_OPP |Gemeente|GJ/(ha.jaar)|[[Bron RVO |Biogas ]]|
-|Oppervlakte totaal in ha  |OPP_TOT|Gemeente|ha|[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
+|Oppervlakte totaal in ha  |OPP_TOT|Gemeente|ha|[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
 |Oppervlakte Bos|OPP_BOS |Gemeente|ha|[[Bron CBS|https://data.overheid.nl/dataset/7265-bestand-bodemgebruik-2017]]|
-|Oppervlakte Land|OPP_LAND |Gemeente|ha|[[Bron CBS|https://https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
-|Oppervlakte Water|OPP_WATER|Gemeente|ha|[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2020]]|
+|Oppervlakte Land|OPP_LAND |Gemeente|ha|[[Bron CBS|https://https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
+|Oppervlakte Water|OPP_WATER|Gemeente|ha|[[Bron CBS en kadaster|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische%20data/wijk-en-buurtkaart-2022]]|
 
 !Berekende velden:
 De volgende kolommen zijn toegevoegd.  ( HH_GAS_TJ,  HH_EL_TJ). 
@@ -13304,11 +13304,11 @@ Stedelijkheid:
 !Thema's
 Thema beschrijvingen die beschikbaar zijn op gemeente niveau:
 
-* [[CBS: Toelichting Wijk- en Buurtkaart 2019, 2020 en 2021|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2020]]
-* [[CBS: Toelichting Wijk- en Buurtkaart 2019, 2020 en 2021|https://www.cbs.nl/nl-nl/longread/aanvullende-statistische-diensten/2020/toelichting-wijk-en-buurtkaart-2019-2020-en-2021]]
+* [[CBS: Toelichting Wijk- en Buurtkaart 2019, 2020 en 2021|https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2022]]
+* [[CBS: Toelichting Wijk- en Buurtkaart 2020 2021 en 2022|https://www.cbs.nl/nl-nl/longread/aanvullende-statistische-diensten/2022/toelichting-wijk-en-buurtkaart-2020-2021-en-2022]]
 * [[CBS: Energielevering|https://opendata.cbs.nl/statline/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=82538NED&amp;_theme=281]]
 * [[CBS: Akkerbouw|https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80781NED/table?dl=32D52]]
-* [[CBS: Mest|https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83982NED/table?dl=32D5A]]
+* [[RVO/CBS: Mest|https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83982NED/table?dl=32D5A]]
 * [[CBS: GFT|https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83452NED/table?dl=32D8C]]
 * [[CBS: Snoei-afval|https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83452NED/table?dl=32D8C]]
 
