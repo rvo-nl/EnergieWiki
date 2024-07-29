@@ -11439,25 +11439,26 @@ De huidige realisatie van duurzame energie is te vinden op [[Hernieuwbare energi
 *regelgeving: [[Duurzaamheidseisen biomassa RED II SDE++|https://www.rvo.nl/subsidies-financiering/sde/aanvragen/redii-sde]]
 *regelgeving: [[Duurzaamheidseisen biomassa in pelletinstallaties SDE+|https://www.rvo.nl/subsidie-en-financieringswijzer/sde/aanvragen/biomassa/duurzaamheidseisen-pelletinstallaties]]</pre>
 </div>
-<div created="20210325151134329" creator="RVO" modified="20240729092440634" modifier="RVO" tags="RealisatieProjecten" title="BodemEnergie">
+<div created="20210325151134329" creator="RVO" modified="20240729095511660" modifier="RVO" tags="RealisatieProjecten" title="BodemEnergie">
 <pre>Bodemenergie is gebruikmaken van de bodem om warmte en koude aan te onttrekken en in op te slaan. Bodemenergiesystemen (BES) hebben een boordiepte van maximaal 500 meter beneden maaiveld. Dieper dan 500 meter spreken we van geothermie (zie ook  [[Aardwarmte|Aardwarmte]])
 
 
 ! Bodemenergie open systemen
 
-Toelichting
+!!Toelichting
 In deze kaarten is de hoeveelheid koude of warmte weergegeven, uitgedrukt in gigajoules per hectare per jaar (GJ/ha per jaar), die middels een open systeem gewonnen kan worden.
 
 !! Basisgegevens
 De kaart is gebaseerd op de bodemgegevens van het Nationaal Hydrologisch Instrumentarium (NHI) en grondwaterstandgegevens van TNO (REGIS II).
 
 !!Beschrijving systeem
+&lt;table&gt;
+  &lt;div  style=&quot;float:left; width:800px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/16f041d0-8b69-435e-a1c9-145d31772db4/1426001400wko.jpg]] &lt;/div&gt; 
+&lt;/table&gt;
+&lt;tfoot&gt;Figuur 3 Principeschema open systeem&lt;/tfoot&gt;  &lt;br&gt;
 
-&lt;div  style=&quot;float:left; width:800px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/16f041d0-8b69-435e-a1c9-145d31772db4/1426001400wko.jpg]] &lt;/div&gt;   &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
-
-Figuur 3 Principeschema open systeem  &lt;br&gt;
-
-Een open systeem onttrekt grondwater uit een bron. Dit grondwater is ongeveer 11 graden Celsius, een ideale temperatuur om een woning of kantoor te koelen. Vergeleken met een koelmachine of airconditioner geeft dit een energiebesparing tot maximaal 80%. Voor verwarmen is een temperatuur van 11 graden Celsius niet hoog genoeg. Daarom wordt een warmtepomp gebruikt die de temperatuur verhoogt naar 
+Een open systeem onttrekt grondwater uit een bron. Dit grondwater is ongeveer 11 graden Celsius, een ideale temperatuur om een woning of kantoor te koelen. &lt;br&gt; 
+Vergeleken met een koelmachine of airconditioner geeft dit een energiebesparing tot maximaal 80%. Voor verwarmen is een temperatuur van 11 graden Celsius niet hoog genoeg. Daarom wordt een warmtepomp gebruikt die de temperatuur verhoogt naar 
 circa 50 graden Celsius. Deze warmtepomp gebruikt energie en daarom is de energiebesparing lager dan bij koelen: ongeveer 40%. Als het grondwater warmte of koude heeft uitgewisseld, wordt het weer geïnfiltreerd in de bodem. In figuur 3 is het principeschema van een open systeem opgenomen.
 
 !!Randvoorwaarden
@@ -11470,28 +11471,49 @@ Om te berekenen hoeveel warmte of koude per hectare per jaar de ondergrond maxim
 * Uitgegaan wordt van een energiebalans. Het bodemenergiesysteem onttrekt evenveel warmte als koude aan de bodem. &lt;br&gt;
 * De onderlinge systemen hebben geen thermische interactie met elkaar. Dit houdt in dat tussen de verschillende bronnen minimaal twee maal de thermische straal zit. (zie figuur 4) &lt;br&gt;&lt;br&gt;
 
-
-&lt;div  style=&quot;float:left; width:300px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/2a277165-9ed3-4e0f-9b3e-838656983ac0/1426001686straal.jpg]] &lt;/div&gt;  &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
-
-Figuur 4 Onderlinge afstand tussen de bronnen
+&lt;table&gt;
+  &lt;div  style=&quot;float:left; width:300px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/2a277165-9ed3-4e0f-9b3e-838656983ac0/1426001686straal.jpg]] &lt;/div&gt; 
+&lt;/table&gt; 
+&lt;tfoot&gt;Figuur 4 Onderlinge afstand tussen de bronnen&lt;/tfoot&gt; &lt;br&gt;
 
 !!Rekenmodule
 Voor het berekenen van de energiehoeveelheid (Qt, in kWh) is de volgende formule gebruikt: &lt;br&gt;
 &lt;br&gt;
-          Qt = 1,16 ^^.^^ V,,gem,, ^^.^^ T,,gem,, &lt;br&gt;
+          Qt = 1,16 ^^.^^ V,,gem,, ^^.^^ ΔT,,gem,, &lt;br&gt;&lt;br&gt;
 
-Waarbij &lt;br&gt;
-V,,gem,, = gemiddelde waterhoeveelheid [m³]                  &lt;br&gt;
-ΔT,,gem,, = gemiddelde temperatuurverschil [˚C] = 6 ˚C   &lt;br&gt;
-1,16 = omrekeningsfactor 4.200 J/kg / 3.600 s/h.              &lt;br&gt;
+Waarbij
+
+&lt;table BORDER=&quot;0&quot;&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+       &lt;td&gt;V,,gem,,&lt;/td&gt;   &lt;td&gt;= gemiddelde waterhoeveelheid [m³]   &lt;/td&gt; &lt;td&gt; &lt;/td&gt; 
+ &lt;/tr&gt;
+  &lt;tr&gt;
+       &lt;td&gt;ΔT,,gem,, &lt;/td&gt;   &lt;td&gt;= gemiddelde temperatuurverschil [˚C] &lt;/td&gt; &lt;td&gt;= 6 ˚C  &lt;/td&gt; 
+ &lt;/tr&gt;
+  &lt;tr&gt;
+       &lt;td&gt;1,16 &lt;/td&gt;   &lt;td&gt;= omrekeningsfactor 4.200 J/kg / 3.600 s/h. &lt;/td&gt; &lt;td&gt; &lt;/td&gt; 
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+
 
 In de berekeningen is uitgegaan van een maximale filterlengte van 80% van de totale pakketdikte. Van het pakket kan de helft (50%) voor koude- en de andere helft voor warmteopslag benut worden, per helft is uitgegaan van een maximaal benutbaar  oppervlakte van 70%. Op basis van deze gegevens kan de een formule opgezet worden die de energiehoeveelheid per m³ bodem (en grondwater) berekend: &lt;br&gt;
 
-Qt= 1,16 ^^.^^ΔT,,gem,, ^^.^^ (0,28 ^^.^^ &amp;#977;)  &lt;br&gt;
+Qt= 1,16 ^^.^^ΔT,,gem,, ^^.^^ (0,28 ^^.^^ &amp;#977;)  &lt;br&gt;&lt;br&gt;
 
-Waarbij&lt;br&gt;
-Θ = porositeit [-] = 30%                                                &lt;br&gt;
-ΔTgem = gemiddelde temperatuurverschil [˚C] = 6 ˚C  &lt;br&gt;
+Waarbij
+&lt;table BORDER=&quot;0&quot;&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+       &lt;td&gt;Θ&lt;/td&gt;             &lt;td&gt;= porositeit [-] &lt;/td&gt;                                       &lt;td&gt;= 30%&lt;/td&gt; 
+ &lt;/tr&gt;
+  &lt;tr&gt;
+       &lt;td&gt;ΔTgem &lt;/td&gt;   &lt;td&gt;= gemiddelde temperatuurverschil [˚C] &lt;/td&gt; &lt;td&gt;= 6 ˚C &lt;/td&gt; 
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+
 
 Wanneer dit getal omgerekend wordt van kWh naar GJ/ha per jaar komt de 
 hoeveelheid winbare energie per meter beschikbaar watervoerend pakket uit op 21
