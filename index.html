@@ -10141,8 +10141,8 @@ Error message and password prompt
 <div created="20201210095723092" creator="RVO" modified="20201210095723092" modifier="RVO" title="$:/state/tab/sidebar--1017963539">
 <pre>TableOfContents</pre>
 </div>
-<div created="20201127161934165" creator="RVO" modified="20240802095008043" modifier="RVO" title="$:/state/tab/sidebar--595412856">
-<pre>TableOfContents</pre>
+<div created="20201127161934165" creator="RVO" modified="20240802100222387" modifier="RVO" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20201129143329634" creator="RVO" modified="20210406155046018" modifier="RVO" title="$:/state/toc/Inhoud-DuurzaamEnergiePotentieel--118161433">
 <pre>open</pre>
@@ -10249,7 +10249,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20240802092040757" creator="RVO" list="Omgevingswarmte" modified="20240802095742456" modifier="RVO" title="$:/StoryList">
+<div created="20240802092040757" creator="RVO" list="Omgevingswarmte" modified="20240802100343760" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220923130659629" creator="RVO" modified="20240313110410118" modifier="RVO" title="$:/temp/advancedsearch">
@@ -15010,10 +15010,140 @@ De [[ nationale energie verkenning 2020 |https://www.pbl.nl/publicaties/klimaat-
 <div created="20201103073550006" creator="RVO" modified="20201210100624475" modifier="RVO" order="2" tags="Inhoud" title="NetInfrastructuur">
 <pre></pre>
 </div>
-<div created="20210323144756398" creator="RVO" modified="20240802100153190" modifier="RVO" tags="DuurzaamEnergiePotentieel" title="Omgevingswarmte">
+<div created="20210323144756398" creator="RVO" modified="20240802100644378" modifier="RVO" tags="DuurzaamEnergiePotentieel" title="Omgevingswarmte">
 <pre>!Beschrijving
 
 !Actualiteit
+De gegevens uit de 4 WKO lagen dateren van 2018.  We werken aan een update om de data uit het WarmingUp programma te ontsluiten.  De actuele data (2021/2022) is te raadplegen via de AquathermieViewer van STOWA. 
+
+
+! Bodemenergie open systemen
+
+!!Toelichting
+In deze kaarten is de hoeveelheid koude of warmte weergegeven, uitgedrukt in gigajoules per hectare per jaar (GJ/ha per jaar), die middels een open systeem gewonnen kan worden.
+
+!! Basisgegevens
+De kaart is gebaseerd op de bodemgegevens van het Nationaal Hydrologisch Instrumentarium (NHI) en grondwaterstandgegevens van TNO (REGIS II).
+
+!!Beschrijving systeem
+&lt;table border=&quot;0&quot;&gt;
+  &lt;div  style=&quot;float:left; width:800px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/16f041d0-8b69-435e-a1c9-145d31772db4/1426001400wko.jpg]] &lt;/div&gt; 
+&lt;/table&gt;
+&lt;tfoot&gt;Figuur 3 Principeschema open systeem&lt;/tfoot&gt;  &lt;br&gt;
+
+Een open systeem onttrekt grondwater uit een bron. Dit grondwater is ongeveer 11 graden Celsius, een ideale temperatuur om een woning of kantoor te koelen. &lt;br&gt; 
+Vergeleken met een koelmachine of airconditioner geeft dit een energiebesparing tot maximaal 80%. Voor verwarmen is een temperatuur van 11 graden Celsius niet hoog genoeg. Daarom wordt een warmtepomp gebruikt die de temperatuur verhoogt naar 
+circa 50 graden Celsius. Deze warmtepomp gebruikt energie en daarom is de energiebesparing lager dan bij koelen: ongeveer 40%. Als het grondwater warmte of koude heeft uitgewisseld, wordt het weer geïnfiltreerd in de bodem. In figuur 3 is het principeschema van een open systeem opgenomen.
+
+!!Randvoorwaarden
+Om te berekenen hoeveel warmte of koude per hectare per jaar de ondergrond maximaal kan leveren, zijn de volgende randvoorwaarden gebruikt. De randvoorwaarden maken het mogelijk om de energiehoeveelheden in de verschillende delen van Nederland met elkaar te vergelijken:
+
+* Uitgegaan wordt van een doubletsysteem waarbij ’s zomers uit één koude bron wordt onttrokken en in één warme bron wordt geïnfiltreerd. ’s Winters gebeurt dit visa versa. &lt;br&gt;
+* Open systemen maken alleen gebruik van de zandpakketten in de ondergrond tot een maximale diepte van 250 meter beneden maaiveld. Voor de berekeningen is de totale beschikbare dikte (de verschillende pakketten opgeteld) meegenomen. &lt;br&gt;
+* De filters kunnen over 80% van de totale dikte van het pakket geplaatst worden. &lt;br&gt;
+* De bodem boven de gemiddelde grondwaterstand (REGIS) wordt niet meegenomen in de berekening. &lt;br&gt;
+* Uitgegaan wordt van een energiebalans. Het bodemenergiesysteem onttrekt evenveel warmte als koude aan de bodem. &lt;br&gt;
+* De onderlinge systemen hebben geen thermische interactie met elkaar. Dit houdt in dat tussen de verschillende bronnen minimaal twee maal de thermische straal zit. (zie figuur 4) &lt;br&gt;&lt;br&gt;
+
+&lt;table&gt;
+  &lt;div  style=&quot;float:left; width:300px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/2a277165-9ed3-4e0f-9b3e-838656983ac0/1426001686straal.jpg]] &lt;/div&gt; 
+&lt;/table&gt; 
+&lt;tfoot&gt;Figuur 4 Onderlinge afstand tussen de bronnen&lt;/tfoot&gt; &lt;br&gt;
+
+!!Rekenmodule
+Voor het berekenen van de energiehoeveelheid (Qt, in kWh) is de volgende formule gebruikt: &lt;br&gt;
+&lt;br&gt;
+    &lt;FONT SIZE=&quot;+1&quot;&gt;
+          Qt = 1,16 ^^.^^ V,,gem,, ^^.^^ ΔT,,gem,, &lt;br&gt;&lt;br&gt;
+    &lt;/FONT&gt;
+
+Waarbij
+
+&lt;table BORDER=&quot;0&quot;&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+       &lt;td&gt;V,,gem,,&lt;/td&gt;   &lt;td&gt;= gemiddelde waterhoeveelheid [m³]   &lt;/td&gt; &lt;td&gt; &lt;/td&gt; 
+ &lt;/tr&gt;
+  &lt;tr&gt;
+       &lt;td&gt;ΔT,,gem,, &lt;/td&gt;   &lt;td&gt;= gemiddelde temperatuurverschil [˚C] &lt;/td&gt; &lt;td&gt;= 6 ˚C  &lt;/td&gt; 
+ &lt;/tr&gt;
+  &lt;tr&gt;
+       &lt;td&gt;1,16 &lt;/td&gt;   &lt;td&gt;= omrekeningsfactor 4.200 J/kg / 3.600 s/h. &lt;/td&gt; &lt;td&gt; &lt;/td&gt; 
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+In de berekeningen is uitgegaan van een maximale filterlengte van 80% van de totale pakketdikte. Van het pakket kan de helft (50%) voor koude- en de andere helft voor warmteopslag benut worden, per helft is uitgegaan van een maximaal benutbaar  oppervlakte van 70%. Op basis van deze gegevens kan de een formule opgezet worden die de energiehoeveelheid per m³ bodem (en grondwater) berekend: &lt;br&gt;
+
+Qt= 1,16 ^^.^^ΔT,,gem,, ^^.^^ (0,28 ^^.^^ &amp;#977;)  &lt;br&gt;&lt;br&gt;
+
+Waarbij
+&lt;table BORDER=&quot;0&quot;&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+       &lt;td&gt;Θ&lt;/td&gt;             &lt;td&gt;= porositeit [-] &lt;/td&gt;                                       &lt;td&gt;= 30%&lt;/td&gt; 
+ &lt;/tr&gt;
+  &lt;tr&gt;
+       &lt;td&gt;ΔTgem &lt;/td&gt;   &lt;td&gt;= gemiddelde temperatuurverschil [˚C] &lt;/td&gt; &lt;td&gt;= 6 ˚C &lt;/td&gt; 
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+Wanneer dit getal omgerekend wordt van kWh naar GJ/ha per jaar komt de 
+hoeveelheid winbare energie per meter beschikbaar watervoerend pakket uit op 21
+GJ/ha per jaar per meter beschikbaar pakket
+
+!!Betrouwbaarheid
+Bij het berekenen van de hoeveelheid energie is uitgegaan van de totale dikte van alle aanwezige pakketten. In de praktijk kan een pakket uitgesloten zijn voor de toepassing van open systemen. Een voorbeeld hiervan zijn de grondwaterbeschermingsgebieden. Met deze juridische en beleidsmatige beperkingen is geen rekening gehouden in de warmtekaart.
+
+In de berekening wordt uitgegaan van een doubletsysteem. Er bestaan echter meerdere typen open bodemenergiesystemen. Deze systemen kunnen een ander effectief gebruik van de ondergrond hebben. 
+
+In de berekeningen is uitgegaan dat 80% van de pakketdikte voor het filter gebruikt wordt. In de praktijk kan echter door aanwezigheid van lokale kleilagen (gestuwd gebied) minder filter geplaatst worden.  &lt;br&gt;  &lt;br&gt;
+
+
+!Bodemopslag gesloten systemen
+//(Bestand: gs_warm, gs_koud)//
+
+!!Toelichting
+In deze kaarten is de hoeveelheid koude of warmte weergegeven, uitgedrukt in gigajoules per hectare per jaar (GJ/ha per jaar), die middels een gesloten systeem gewonnen kan worden.
+
+!!Basisgegevens
+De kaart is gebaseerd op de bodemgegevens van het Nationaal Hydrologisch Instrumentarium (NHI) en grondwaterstandgegevens van TNO (REGIS II). &lt;br&gt;&lt;br&gt;
+
+&lt;table border= &quot;0&quot;&gt;
+  &lt;div  style=&quot;float:left; width:800px&quot;&gt; [img[https://samenwerken.pleio.nl/file/download/226e1619-d464-446e-94e0-2e15f4f7a122/1426000818vww.jpg]] &lt;/div&gt; 
+&lt;/table&gt;
+&lt;tfoot&gt;Figuur 5 Principeschema gesloten systeem&lt;/tfoot&gt;  &lt;br&gt;
+
+
+&lt;br&gt;
+Een gesloten systeem (ook wel bodemlussen genoemd) onttrekt warmte en koude uit de bodem door middel van lussen (een soort tuinslangen). In tegenstelling tot de open systemen wordt geen grondwater opgepompt. Door de lussen stroomt een medium dat meestal bestaat uit leidingwater met een antivriesmiddel. Dit medium neemt de temperatuur van de bodem aan die ongeveer 11 graden Celsius is. Hiermee kan de woning of het kantoor direct worden gekoeld. Voor verwarmen wordt een warmtepomp gebruikt die de temperatuur verhoogt van 11 graden Celsius naar circa 50 graden Celsius. De energiebesparing bij gesloten systemen varieert van 25 tot 40%. In figuur 5 is het principeschema van een gesloten systeem opgenomen.
+
+!!Randvoorwaarden
+Voor het berekenen van de energiehoeveelheid zijn enkele randvoorwaarden gebruikt. Door deze randvoorwaarden is het mogelijk om de energiehoeveelheden in de verschillende delen van Nederland met elkaar te vergelijken. Het gaat om de volgende randvoorwaarden:
+
+* Uitgegaan wordt van een onderlinge lusafstand van 10 m. Dit komt neer op 100 lussen per hectare.
+* De maximale diepte per lus waarmee gerekend is, is 150 meter beneden maaiveld.
+* Voor het berekenen van de energielevering van de ondergrond is uitgegaan van een standaard woning met 1.500 uur aan warmtevraag (6,4 MWh), bestaande uit 800 uur aan ruimteverwarming en 700 uur aan tapwaterverwarming, en 600 uur aan koudevraag (1,3 MWh). De kengetallen zijn gebaseerd op de NEN 5128 en de referentiewoning van AgentschapNL 
+
+!!Rekenmodule.
+Met behulp van het rekenprogramma EED¹ is bepaald wat de ondergrond per hectare kan leveren. Gekeken is naar drie typen ondergrond:
+
+* Zand onder de grondwaterstand. Zand onder de grondwaterstand levert per meter bodemlus 11,0 GJ/ha warmte en 3,2 GJ/ha koude.
+* Klei onder grondwaterstand. Klei onder de grondwaterstand levert per meter bodemlus 10,0 GJ/ha warmte en 3,0 GJ/ha koude.
+* Zand boven de grondwaterstand. Door de afwezigheid van water is de energielevering van zand boven de grondwaterstand lager dan van zand onder de grondwaterstand. Dit zand levert 7,6 GJ/ha per meter bodemlus warmte en 2,2 GJ/ha per meter bodemlus koude.
+
+Met deze gegevens van de ondergrond kan vervolgens de energiehoeveelheid per hectare worden berekend.
+
+!!Betrouwbaarheid
+Uitgegaan is dat de ondergrond bestaat uit zand en kleilagen. Naast het zand en klei in de ondergrond kunnen ook andere grondsoorten voorkomen (veen, leem). Deze grondsoorten hebben andere warmtegeleiding en -capaciteitsgetallen, waardoor de energiehoeveelheid beschikbaar in de ondergrond in de praktijk kan variëren. Deze grondsoorten komen echter in beperkte mate in de Nederlandse ondergrond voor waardoor het effect op de totale energiehoeveelheid te verwaarlozen is. &lt;br&gt;&lt;br&gt;
+
+De maximale diepte is nu beperkt tot 150 meter beneden maaiveld. Het is mogelijk dat in de toekomst de bodemlussen tot grotere diepte gerealiseerd kunnen worden. Hierdoor zal de beschikbare energiehoeveelheid die uit de ondergrond gehaald kan worden toenemen. &lt;br&gt;&lt;br&gt;
+
+¹ EED; Earth Energy Designer, ontwikkeld door onder andere Lund University in Zweden
+
 
 !! interne verwijzingen.
 * WKOgeslKoudeOpslag
