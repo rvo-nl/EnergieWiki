@@ -10148,7 +10148,7 @@ Error message and password prompt
 <div created="20201210095723092" creator="RVO" modified="20201210095723092" modifier="RVO" title="$:/state/tab/sidebar--1017963539">
 <pre>TableOfContents</pre>
 </div>
-<div created="20201127161934165" creator="RVO" modified="20241105150949885" modifier="RVO" title="$:/state/tab/sidebar--595412856">
+<div created="20201127161934165" creator="RVO" modified="20241127160203539" modifier="RVO" title="$:/state/tab/sidebar--595412856">
 <pre>TableOfContents</pre>
 </div>
 <div created="20201129143329634" creator="RVO" modified="20210406155046018" modifier="RVO" title="$:/state/toc/Inhoud-DuurzaamEnergiePotentieel--118161433">
@@ -10256,7 +10256,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20241126104026976" creator="RVO" list="AquathermieEffluent Updates" modified="20241126105001729" modifier="RVO" title="$:/StoryList">
+<div created="20241127155456347" creator="RVO" list="WarmteAtlas" modified="20241127160204962" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220923130659629" creator="RVO" modified="20240313110410118" modifier="RVO" title="$:/temp/advancedsearch">
@@ -10678,7 +10678,7 @@ Deze kaarten zijn samengesteld als ondersteunende bijlage voor de Structuurvisie
 <div created="20210323144227305" creator="RVO" modified="20210408122157574" modifier="RVO" order="3" tags="Aardwarmte" title="AardwarmteTrias">
 <pre></pre>
 </div>
-<div created="20210325130215953" creator="RVO" modified="20220216132202745" modifier="RVO" tags="RealisatieProjecten" title="AardwarmteVergunningen" type="text/vnd.tiddlywiki">
+<div created="20210325130215953" creator="RVO" modified="20241127160150929" modifier="RVO" tags="RealisatieProjecten" title="AardwarmteVergunningen" type="text/vnd.tiddlywiki">
 <pre>! Beschrijving
 
 Voor het opsporen en winnen van delfstoffen of aardwarmte is een daartoe strekkende vergunning en ingestemd winningsplan nodig van de Minister van Economische Zaken en Klimaat (artikel 6 van de Mijnbouwwet). Tevens is volgens de Wet algemene bepalingen omgevingsrecht (WABO) een omgevingsvergunning nodig.
@@ -10690,7 +10690,7 @@ Een winningsvergunning is nodig om aardwarmte uit de ondergrond te mogen winnen.
 
 ! Actualiteit van de data
 WarmteAtlas WMS AardwarmteVergunningen: actueel &lt;br&gt;
-WarmteAtlas WFS: dec 2021  &lt;br&gt;
+WarmteAtlas WFS: nov2024  &lt;br&gt;
 
 ! Attributen
 
@@ -10699,9 +10699,11 @@ WarmteAtlas WFS: dec 2021  &lt;br&gt;
 		&lt;tr&gt;&lt;td&gt;Attribuut&lt;/td&gt;		&lt;td&gt;Waarde&lt;/td&gt;				&lt;/tr&gt;
 	&lt;/thead&gt;
 	&lt;tbody&gt;
-		&lt;tr&gt;&lt;td&gt;LICENCE_NM&lt;/td&gt;		&lt;td&gt;[VergunningsNaam]&lt;/td&gt;	&lt;/tr&gt;
-		&lt;tr&gt;&lt;td&gt;LICENCE_TY&lt;/td&gt;		&lt;td&gt;[VergunningsType]&lt;/td&gt;	&lt;/tr&gt;
-
+		&lt;tr&gt;&lt;td&gt;licence_nm&lt;/td&gt;		&lt;td&gt;[VergunningsNaam]&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;licence_ty&lt;/td&gt;		&lt;td&gt;[VergunningsType]&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;status_cd&lt;/td&gt;		&lt;td&gt;[Status code]&lt;/td&gt;	                &lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;resource_c&lt;/td&gt;		&lt;td&gt;[resource code]&lt;/td&gt;	        &lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;area_cd&lt;/td&gt;		        &lt;td&gt;[GebiedsNaam]&lt;/td&gt;	        &lt;/tr&gt;
 	&lt;/tbody&gt;
     &lt;/table&gt;
 
@@ -15622,11 +15624,12 @@ In de viewer worden 4 visualisaties getoond op basis van het attribuut 'installa
 !Meer Info
 * RVO: [[publicatie TVW database|https://www.expertisecentrumwarmte.nl/nieuws/2338299.aspx]]</pre>
 </div>
-<div created="20220114122749574" creator="RVO" modified="20241126104953401" modifier="RVO" tags="Inhoud" title="Updates">
+<div created="20220114122749574" creator="RVO" modified="20241127155655510" modifier="RVO" tags="Inhoud" title="Updates">
 <pre>!Toelichting
 Overzicht van bijgewerkte datasets. De laatst bijgewerkte dataset staat bovenaan in de lijst. 
 
 |Laagnaam|Actualiteit gegevens|Update date|Opmerking|
+|[[AardwarmteVergunningen]] |nov 2024|nov2024|WFS kan 'achterlopen' op WMS|
 |[[IBISbedrijventerreinen]] |2023 |nov 2024||
 |[[ProductieInstallaties]] |2023|nov 2024|milieucategorie (4,5,6)  uit IBISbedrijventerreinen|
 |[[RestrictieDiepteBeperking]]|nov 2024|nov 2024|incl. aangepaste regels Prov. Noord-Brabant|
@@ -15634,7 +15637,7 @@ Overzicht van bijgewerkte datasets. De laatst bijgewerkte dataset staat bovenaan
 |[[AquathermieRWZI] en Rioolgemalen] |2022|nov 2024|'TEA-Assets' (in AquathermieViewer)|
 |[[AquathermieEffluent]] |2022|nov 2024|('TEA-Assets' (in AquathermieViewer)|
 |[[TVW-visie documenten]] |2020-2023|jun 2023|TransitieVisieWarmte 2020 (gemigreerd naar WarmteAtlas)|
-|[[PAWgebiedsgrenzen]] |2018-2021|2021|beschikbaar in de WarmteAtlas wfs-service|
+|[[PAWgebiedsgrenzen]] |2018-2021|jun 2021|beschikbaar in de WarmteAtlas wfs-service|
 |[[WoonKernen]] |2022|jun 2024|selectie uit CBS BuurtEnergieInfo|
 |[[ProductieInstallaties]] |2022|apr 2024|selectie uit IBISbedrijventerreinen|
 |[[SDE_Warmte]] |2022 |mrt 2024|excl. SDE 'Aanvraagronde 2023'|
