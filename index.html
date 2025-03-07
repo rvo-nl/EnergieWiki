@@ -345,6 +345,8 @@ Error message and password prompt
 
 <li>ConversieEfficienties</li>
 
+<li>Draft of 'SDE_CO2arm' by RVO</li>
+
 <li>DuurzaamEnergiePotentieel</li>
 
 <li>EigendomsVerhoudingWoningenPC6</li>
@@ -10256,7 +10258,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20250228100938609" creator="RVO" list="WarmteAtlas" modified="20250228102229550" modifier="RVO" title="$:/StoryList">
+<div created="20250307102049679" creator="RVO" list="[[Draft of 'SDE_CO2arm' by RVO]]" modified="20250307105201149" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220923130659629" creator="RVO" modified="20250228102054451" modifier="RVO" title="$:/temp/advancedsearch">
@@ -11744,6 +11746,80 @@ zie [[Athos project|https://athosccus.nl/]]</pre>
 </div>
 <div created="20201207164434361" modified="20201207164501693" tags="EnergieKentallen" title="ConversieEfficienties">
 <pre></pre>
+</div>
+<div created="20220727141013114" creator="RVO" draft.of="SDE_CO2arm" draft.title="SDE_CO2arm" modified="20250307110545066" modifier="RVO" tags="RealisatieProjecten" title="Draft of 'SDE_CO2arm' by RVO">
+<pre>! Beschrijving
+
+De Stimulering Duurzame Energieproductie en Klimaattransitie (SDE++) geeft subsidie aan bedrijven en non-profitorganisaties die grootschalig hernieuwbare energie opwekken of de CO2-uitstoot verminderen. De SDE+ regeling kent de volgende hoofdcategorieën Hernieuwbare elektriciteit, Hernieuwbare warmte (WKK), Hernieuwbaar gas, CO2-arme warmte, CO2-arme productie.  &lt;br&gt;
+Deze laag bevat alle SDE+ CO2 arme Energie of Warmte projecten met duurzame warmte toepassing ( aquathermie (TEO, TEA, TED), aardwarmte (ondiep), daglichtkas, zon-PVT met warmtepomp, e-boiler, restwarmte, industriële warmtepomp, lucht-water warmtepomp, hybride glasoven )
+
+! Actualiteit
+Actualiteit gegevens ''2023   ''(bijgewerkt jun 2024. bevat nog niet de gegevens van SDE 'Aanvraagronde 2024')
+
+* WMS Service ~WarmteAtlas: http://www.warmteatlas.nl/geoserver/WarmteAtlas/wms?
+* WFS Service ~WarmteAtlas: http://www.warmteatlas.nl/geoserver/WarmteAtlas/wfs?
+* KaartLaagnaam: ''SDE_CO2arm'' 
+
+!!SDE+ CO2 arme projecten
+De laag geeft informatie over de projecten die met SDE-subsidie zijn of worden gerealiseerd. 
+
+In de viewer zijn de locaties van de projecten gebaseerd op het postcodegebied (6 posities). Een aantal projecten is geanonimiseerd vanwege art. 10, tweede lid, onder aanhef en letter e van de Wet openbaarheid van bestuur. Bij deze laatste data is gebruik gemaakt van het postcode 4 bestand, waardoor de nauwkeurigheid op wijkniveau ligt.
+
+Elk rondje geeft een project weer. Hoe groter het rondje, hoe hoger het vermogen van het project. 
+
+!Attributen
+
+   &lt;table id=&quot;SDE_Warmte_Attributen&quot; class=&quot;collapse table table-striped table-hover table-sm&quot;&gt;
+	 &lt;thead&gt;
+		&lt;tr&gt;&lt;td&gt;Attribuut&lt;/td&gt;				&lt;td&gt;Waarde&lt;/td&gt;		 &lt;td&gt;Eenheid&lt;/td&gt;	&lt;/tr&gt;
+	 &lt;/thead&gt;
+	 &lt;tbody&gt; 
+		&lt;tr&gt;&lt;td&gt;Soort duurzame energie&lt;/td&gt;	&lt;td&gt;[Soort]&lt;/td&gt;		&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;Subsoort&lt;/td&gt;				&lt;td&gt;[SubSoort]&lt;/td&gt;	&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;Status&lt;/td&gt;					&lt;td&gt;[Status]&lt;/td&gt;		&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;BeschikkingsJaar&lt;/td&gt;			&lt;td&gt;[Beschik_jr]&lt;/td&gt;	&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;Realisatiejaar&lt;/td&gt;				&lt;td&gt;[Bouw_jr]&lt;/td&gt;	&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;Vermogen (MW)&lt;/td&gt;			&lt;td&gt;[V_MW]&lt;/td&gt;		&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;Energie  (MWhpa)&lt;/td&gt;			&lt;td&gt;[E_MWhpa]&lt;/td&gt;	&lt;td&gt;MW&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;Project omschrijving&lt;/td&gt;		&lt;td&gt;[Popup]&lt;/td&gt;		&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;Budget (max. bedrag)&lt;/td&gt;		&lt;td&gt;[Budget]&lt;/td&gt;	&lt;td&gt;€&lt;/td&gt;	&lt;/tr&gt;
+		&lt;tr&gt;&lt;td&gt;SDE Aanvraagnr&lt;/td&gt;			&lt;td&gt;[Naam]&lt;/td&gt;		&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+
+                &lt;tr&gt;&lt;td&gt;Referentie&lt;/td&gt;                        &lt;td&gt;[Referentie]&lt;/td&gt;        &lt;td&gt;&lt;/td&gt;       &lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Aanvrager_naam&lt;/td&gt;              &lt;td&gt;[Aanvrager]&lt;/td&gt;       &lt;td&gt;&lt;/td&gt;       &lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Indienronde&lt;/td&gt;                     &lt;td&gt;[SDE_ronde]&lt;/td&gt;      &lt;td&gt;&lt;/td&gt;       &lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Categorie&lt;/td&gt;                         &lt;td&gt;[Categorie]&lt;/td&gt;        &lt;td&gt;&lt;/td&gt;       &lt;/tr&gt;                                            
+                &lt;tr&gt;&lt;td&gt;Categorie_Soort&lt;/td&gt;               &lt;td&gt;[Cat_Soort]&lt;/td&gt;        &lt;td&gt;&lt;/td&gt;       &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Categorie_SubSoort&lt;/td&gt;              &lt;td&gt;[Cat_SubSrt]&lt;/td&gt;      &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Categorie_narratief&lt;/td&gt;          &lt;td&gt;[Cat_narrat]&lt;/td&gt;       &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Status&lt;/td&gt;                               &lt;td&gt;[Status]&lt;/td&gt;             &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Status_gerealiseerd&lt;/td&gt;          &lt;td&gt;[Realisatie]&lt;/td&gt;        &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;InstallatieJaar&lt;/td&gt;                   &lt;td&gt;[Instal_Jr]&lt;/td&gt;           &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Ingebruikname&lt;/td&gt;                &lt;td&gt;[Ingebruikn]&lt;/td&gt;       &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Energiedrager&lt;/td&gt;                  &lt;td&gt;[E_drager_s]&lt;/td&gt;       &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Energiebron&lt;/td&gt;                     &lt;td&gt;[E_bron]&lt;/td&gt;             &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Glastuinbouw&lt;/td&gt;                   &lt;td&gt;[Glas]&lt;/td&gt;                 &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Nominaal_opgesteld_vermogen &lt;/td&gt; &lt;td&gt;[V_MW]&lt;/td&gt; &lt;td&gt;MW&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Max_subs_prod_per_jaar_MWhpa&lt;/td&gt; &lt;td&gt;[E_Mwhpa]&lt;/td&gt; &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Vollasturen&lt;/td&gt;                       &lt;td&gt;[Vollast]&lt;/td&gt;     &lt;td&gt;uren per jaar&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Budget&lt;/td&gt;                             &lt;td&gt;[Budget]&lt;/td&gt;                  &lt;td&gt;€&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Looptijd&lt;/td&gt;                           &lt;td&gt;[Looptijd]&lt;/td&gt;                  &lt;td&gt;Jaar&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Plaats&lt;/td&gt;                               &lt;td&gt;[Plaats]&lt;/td&gt;                  &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Gemeente&lt;/td&gt;                        &lt;td&gt;[Gemeente]&lt;/td&gt;                  &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Provincie&lt;/td&gt;                          &lt;td&gt;[Provincie]&lt;/td&gt;                  &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;RES_regio&lt;/td&gt;                         &lt;td&gt;[RES_regio]&lt;/td&gt;                  &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Zon_opstelling&lt;/td&gt;                 &lt;td&gt;[Zon_PV]&lt;/td&gt;                  &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;SBI_2dig&lt;/td&gt;                           &lt;td&gt;[SBI_2dig]&lt;/td&gt;                  &lt;td&gt;codering&lt;/td&gt;	&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Klimaattafel&lt;/td&gt;                     &lt;td&gt;[Klim_tafel]&lt;/td&gt;              &lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;
+
+
+
+
+
+	 &lt;/tbody&gt;
+    &lt;/table&gt;
+</pre>
 </div>
 <div changecount="9" created="20150311151500000" modified="20201208135218147" modifier="RVO" order="4" tags="Inhoud" title="DuurzaamEnergiePotentieel" type="text/vnd.tiddlywiki">
 <pre>|!Hoogte/Diepte (m)|&gt;|&gt;|&gt;|!Warmte productie|!Stroom productie|
@@ -15699,13 +15775,13 @@ In de viewer worden 4 visualisaties getoond op basis van het attribuut 'installa
 !Meer Info
 * RVO: [[publicatie TVW database|https://www.expertisecentrumwarmte.nl/nieuws/2338299.aspx]]</pre>
 </div>
-<div created="20220114122749574" creator="RVO" modified="20250228101921991" modifier="RVO" tags="Inhoud" title="Updates">
+<div created="20220114122749574" creator="RVO" modified="20250307102142983" modifier="RVO" tags="Inhoud" title="Updates">
 <pre>!Toelichting
 Overzicht van bijgewerkte datasets. De laatst bijgewerkte dataset staat bovenaan in de lijst. 
 
 |Laagnaam|Actualiteit gegevens|Update date|Opmerking|
-|[[SDE_Warmte]] |2023 |feb 2025|excl. SDE 'Aanvraagronde 2023'|
-|[[SDE_CO2arm]] |2023 |feb 2025|excl. SDE 'Aanvraagronde 2023'|
+|[[SDE_Warmte]] |2023 |feb 2025|excl. SDE 'Aanvraagronde 2024'|
+|[[SDE_CO2arm]] |2023 |feb 2025|excl. SDE 'Aanvraagronde 2024'|
 |[[SDE_Elektra]] |2023 |feb 2025|beschikbaar als wfs-service|
 |[[Potentiele NOM-rijtjeswoningen (1950-1980)]]|Actueel|jan 2025|WFS service geupdte|
 |[[EigendomsVerhoudingenWoningen per PC6]]|Actueel|jan 2025|WFS service geupdte|
