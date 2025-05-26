@@ -10260,7 +10260,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20250526105444499" creator="RVO" list="WarmteAtlas" modified="20250526111350534" modifier="RVO" title="$:/StoryList">
+<div created="20250526105444499" creator="RVO" list="WarmteAtlas" modified="20250526114552370" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220923130659629" creator="RVO" modified="20250401092522083" modifier="RVO" title="$:/temp/advancedsearch">
@@ -14603,51 +14603,76 @@ De gegevens dateren van de periode 2018-2020
     &lt;/tbody&gt;
   &lt;/table&gt;</pre>
 </div>
-<div created="20250526105901128" creator="RVO" modified="20250526111325459" modifier="RVO" tags="Restwarmte" title="LT-MT_Warmtebronnen">
+<div created="20250526105901128" creator="RVO" modified="20250526114545713" modifier="RVO" tags="Restwarmte" title="LT-MT_Warmtebronnen">
 <pre>!Actualiteit
 De gegevens dateren van de periode 2018-2024
 
 ! Attributen
 
-&lt;table class=&quot;table table-striped&quot;&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Kenmerk&lt;/th&gt;
-        &lt;th&gt;Waarde&lt;/th&gt;
-        &lt;th&gt;Eenheid&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td&gt;BronNaam&lt;/td&gt;
-        &lt;td&gt;[BronNaam]&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;TypeBron&lt;/td&gt;
-        &lt;td&gt;[TypeBron]&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;Vermogen van de Bron&lt;/td&gt;
-        &lt;td&gt;[MWth]&lt;/td&gt;
-        &lt;td&gt;MW&lt;/td&gt;
-      &lt;/tr&gt;
-
-      &lt;tr&gt;
-        &lt;td&gt;Status&lt;/td&gt;
-        &lt;td&gt;[Status]&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;Bron Temperatuur&lt;/td&gt;
-        &lt;td&gt;[BronTemp]&lt;/td&gt;
-        &lt;td&gt;&amp;#8451;&lt;/td&gt;
-      &lt;/tr&gt;
-     
-
-    &lt;/tbody&gt;
-  &lt;/table&gt;</pre>
+  &lt;body&gt;
+    &lt;div style=&quot;max-height: 450px; overflow-y: scroll;&quot;&gt;
+		&lt;table class=&quot;table table-striped&quot;&gt;
+			&lt;thead&gt;
+			 &lt;tr&gt;
+			  &lt;th&gt;Attribuut&lt;/th&gt;
+        	  &lt;th&gt;Waarde&lt;/th&gt;
+        	  &lt;th&gt;Eenheid&lt;/th&gt;
+			 &lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;tbody&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;BronNaan&lt;/td&gt;
+			  &lt;td&gt;[BronNaam]&lt;/td&gt;
+			  &lt;td&gt;&lt;/td&gt;
+			 &lt;/tr&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;TypeBron&lt;/td&gt;
+			  &lt;td&gt;[TypeBron]&lt;/td&gt;
+			  &lt;td&gt;&lt;/td&gt;
+			 &lt;/tr&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;Vermogen van de Bron&lt;/td&gt;
+			  &lt;td&gt;[MWth]&lt;/td&gt;
+			  &lt;td&gt;MWth&lt;/td&gt;
+			 &lt;/tr&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;-- input Vesta MAIS 2024 --&lt;/td&gt;
+			  &lt;td&gt;--&lt;/td&gt;
+			  &lt;td&gt;--&lt;/td&gt;
+			 &lt;/tr&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;Vermogen van de Bron (PBL)&lt;/td&gt;
+			  &lt;td&gt;[MWth_max]&lt;/td&gt;
+			  &lt;td&gt;MWth&lt;/td&gt;
+			 &lt;/tr&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;Bron Temperatuur (PBL)&lt;/td&gt;
+			  &lt;td&gt;[T_Bron]&lt;/td&gt;
+			  &lt;td&gt;C&lt;/td&gt;
+			 &lt;/tr&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;In te zetten aandeel (PBL)&lt;/td&gt;
+			  &lt;td&gt;[bron_cap]&lt;/td&gt;
+			  &lt;td&gt;&lt;/td&gt;
+			 &lt;/tr&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;Aandeel vollasturen (PBL)&lt;/td&gt;
+			  &lt;td&gt;[bron_vol]&lt;/td&gt;
+			  &lt;td&gt;&lt;/td&gt;
+			 &lt;/tr&gt;
+			 &lt;tr&gt;
+			  &lt;td&gt;Status&lt;/td&gt;
+			  &lt;td&gt;[status]&lt;/td&gt;
+			  &lt;td&gt;&lt;/td&gt;
+			 &lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+   	&lt;/div&gt;
+  &lt;/body&gt;
+Status van de bron, met onderscheid op 3 categorieën:&lt;br&gt;
+•	Optie A: Geplande realisatie, zal beschikbaar komen tussen nu en 2030&lt;br&gt;
+•	Optie B: Bestaande bron, zal in 2030 nog steeds beschikbaar zijn&lt;br&gt;
+•	Optie C: Bestaande bron, zal in 2030 niet meer beschikbaar zijn&lt;br&gt;</pre>
 </div>
 <div created="20210325131414063" creator="RVO" modified="20250131210928079" modifier="RVO" order="0" tags="Aardwarmte" title="LTAardwarmte">
 <pre>! Lage Temperatuur Aardwarmte potentieel (TJ/ha)
