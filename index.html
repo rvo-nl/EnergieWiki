@@ -10261,7 +10261,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div list="$:/Import" title="$:/StoryList">
+<div created="20260121123523389" creator="RVO" list="WarmteAtlas" modified="20260121125710500" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220923130659629" creator="RVO" modified="20250401092522083" modifier="RVO" title="$:/temp/advancedsearch">
@@ -15890,11 +15890,14 @@ Deze laag was in eerste aanleg gemaakt om de voortgang van het opstellen van de 
 
 zie: TransitieVisieWarmte database pagina</pre>
 </div>
-<div created="20220114122749574" creator="RVO" modified="20260114194910724" modifier="RVO" tags="Inhoud" title="Updates">
+<div created="20220114122749574" creator="RVO" modified="20260121123923212" modifier="RVO" tags="Inhoud" title="Updates">
 <pre>!Toelichting
 Overzicht van bijgewerkte datasets. De laatst bijgewerkte dataset staat bovenaan in de lijst. 
 
 |Laagnaam|Actualiteit gegevens|Update date|Opmerking|
+|[[WarmteNetten]] |2024|jan2026|CBS voorlopige data; beschikbaar als wfs-service |
+|[[WarmteNetten]] |2023|jan2026||
+|[[WarmteNetten]] |2022|jan2026|revisie CBS data|
 |[[IBISbedrijventerreinen]] |2024 |jan 2026||
 |[[ProductieInstallaties]] |2024|jan 2026|milieucategorie (4,5,6)  uit IBISbedrijventerreinen|
 |[[CO2emissieETSbedrijven]] |2013-2024|sep 2025||
@@ -15906,8 +15909,8 @@ Overzicht van bijgewerkte datasets. De laatst bijgewerkte dataset staat bovenaan
 |[[SDE_Warmte]] |2023 |feb 2025|excl. SDE 'Aanvraagronde 2024' |
 |[[SDE_CO2arm]] |2023 |feb 2025|excl. SDE 'Aanvraagronde 2024'|
 |[[SDE_Elektra]] |2023 |feb 2025|beschikbaar als wfs-service|
-|[[Potentiele NOM-rijtjeswoningen (1950-1980)]]|Actueel|jan 2025|WFS service geupdte|
-|[[EigendomsVerhoudingenWoningen per PC6]]|Actueel|jan 2025|WFS service geupdte|
+|[[Potentiele NOM-rijtjeswoningen (1950-1980)]]|Actueel|jan 2025|WFS service geupdate|
+|[[EigendomsVerhoudingenWoningen per PC6]]|Actueel|jan 2025|WFS service geupdate|
 |[[AardwarmteVergunningen]] |apr 2025|apr 2025|WFS kan 'achterlopen' op WMS|
 |[[PAW (2018-2021) monitor]] |okt-2024|dec2024|gebiesgrenzen incl. monitoringsgegevens &lt;br&gt;(beschikbaar in de WarmteAtlas wfs-service)|
 |[[AardwarmteVergunningen]] |nov 2024|dec2024|WFS kan 'achterlopen' op WMS|
@@ -16146,16 +16149,17 @@ Stuur dan een e-mail naar [[Nationaal Expertise Centrum Warmte (NEW)| mailto:NEW
 
 Aan het deze EnergieWiki behorende bij de [[WarmteAtlas |http://www.warmteatlas.nl]] kunnen geen rechten worden ontleend. Hoewel dit met de groots mogelijke zorg is samengesteld kan RVO.nl (ex AgentschapNL) geen enkele aansprakelijkheid aanvaarden voor schade als gevolg van eventuele onjuistheden en/of uitvoering of gebruik op basis van de getoonde resultaten.</pre>
 </div>
-<div created="20201208160127433" creator="RVO" modified="20251124092023693" modifier="RVO" tags="NetInfrastructuur" title="WarmteNetten">
+<div created="20201208160127433" creator="RVO" modified="20260121125653038" modifier="RVO" tags="NetInfrastructuur" title="WarmteNetten">
 <pre>!Beschrijving Warmtenetkaart
 
-Deze kaart geeft alle buurten weer waarin een aantal woningen zijn aangesloten op een warmtenet. De gegevens zijn afkomstig van de CBS wijk-en buurtgegevens. Rapportage'Energieverbruik Particuliere woningen 2022'. Buurten met een indicatie:  percentage_stadsverwarming &gt; 0 zijn geselecteerd. Het kan dus voorkomen dat een buurt getoond wordt in de kaart terwijl slecht enkele woningen op een warmtenet aangesloten zijn.! &lt;b&gt;Het percentage is vermeld bij tien of meer (bewoonde) woningen.&lt;/b&gt; &lt;br&gt;
+Deze kaart geeft alle buurten weer waarin een aantal woningen zijn aangesloten op een warmtenet. De gegevens zijn afkomstig van de CBS wijk-en buurtgegevens. Rapportage'Energieverbruik Particuliere woningen 2022, 2023'. Buurten met een indicatie:  percentage_stadsverwarming &gt; 0 zijn geselecteerd. Het kan dus voorkomen dat een buurt getoond wordt in de kaart terwijl slecht enkele woningen op een warmtenet aangesloten zijn.! &lt;b&gt;Het percentage is vermeld bij tien of meer (bewoonde) woningen.&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Sinds medio 2025 beschikt het CBS over de gegevens van warmteleveringen op aansluitingsniveau van de vijf grootste warmteleveranciers. Met deze nieuwe databron kan de kwaliteit van statistieken over warmteleveringen in de toekomst worden verbeterd.&lt;br&gt;
 
 Stadsverwarming is een verwarmingssysteem waarbij de woningen in een wijk worden verwarmd via een ondergronds netwerk van warmwaterleidingen. In veel gevallen maakt stadsverwarming gebruik van restwarmte van bijvoorbeeld elektriciteitscentrales. Het aardgasverbruik van deze woningen is in veel gevallen zeer laag of zelfs nul. De hoeveelheid warmte die door aangesloten woningen in een jaar wordt afgenomen van de stadsverwarming is niet beschikbaar. 
 
 
 !Actualiteit
-De gegevens dateren van 2022
+De gegevens dateren van 2023
 
 !Attributen
 * Buurtcode
@@ -16164,8 +16168,10 @@ De gegevens dateren van 2022
 * Aantal Woningen (hele buurt)
 * Percentage Stadsverwarming
 * Jaar
+* Status   (def , voorlopig)
 
 !Meer info
+* CBS: [[Verbeterd zicht op warmtenetten|https://www.cbs.nl/nl-nl/longread/rapportages/2025/verbeterd-zicht-op-warmtenetten]]  dec-2025
 * TKI: [[Inspiratie Warmtenetten en Netcongestie|https://topsectorenergie.nl/nl/kennisbank/kennisdossier-duurzame-warmte-en-koude/inspiratie-warmtenetten-en-netcongestie/]]  nov-2025
 * RVO: [[Aan de slag met zeerlagetemperatuur warmte- en koudenetten|https://www.rvo.nl/onderwerpen/verduurzaming-warmtevoorziening/warmtenetten/zeerlagetermperatuur-warmte-koude-netten]]  nov-2025
 * TNO: [[Design Toolkit - WarmingUp|https://www.warmingup.info/designtoolkit]]
