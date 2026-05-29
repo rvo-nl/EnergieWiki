@@ -10265,7 +10265,7 @@ Error message and password prompt
 <div created="20201210093223530" creator="R" modified="20201210093224498" modifier="RV" title="$:/status/UserName">
 <pre>RVO</pre>
 </div>
-<div created="20260519070543966" creator="RVO" list="WarmteAtlas" modified="20260519070726020" modifier="RVO" title="$:/StoryList">
+<div created="20260529192456089" creator="RVO" list="WarmteAtlas" modified="20260529194635135" modifier="RVO" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220923130659629" creator="RVO" modified="20250401092522083" modifier="RVO" title="$:/temp/advancedsearch">
@@ -10316,11 +10316,11 @@ Error message and password prompt
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1829&quot;
+            &quot;text&quot;: &quot;1920&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;867&quot;
+            &quot;text&quot;: &quot;1080&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -11659,12 +11659,119 @@ Gegevens die beschikbaar zijn op buurt niveau:
 * [[CBS Energieverbruik part. woningen 2022|https://opendata.cbs.nl/statline/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=84837NED&amp;_theme=277]]
 * [[CBS: Gebiedsindeling|https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84721NED/table?ts=1642090441309]]</pre>
 </div>
-<div created="20210323141019796" creator="RVO" modified="20240206124258873" modifier="RVO" tags="Industrie EnergieEmissie" title="CO2emissieBedrijven">
-<pre>!Actualiteit
+<div created="20210323141019796" creator="RVO" modified="20260529194504789" modifier="RVO" tags="Industrie EnergieEmissie" title="CO2emissieBedrijven">
+<pre>! Beschrijving
+Overzicht van de EPRTR-registratie bedrijven. De tabel toont de CO2-emissie in kton/jaar op bedrijfsniveau (niet per installatie). 
+Omdat de dataset gegeven over meerdere jaargangen bevat, zijn er ook bedrijven die 1 of meerdere jaren geen CO2-uitstoot meet (gemeld) hebben bij het RIVM.! &lt;br&gt;
+Bron NEA.
 
-Gegevens bijgewerkt t/m 2015. </pre>
+Indien het installatie type = 'LCP' (Large combustion Plant), dan komt deze ook voor in de GroteStookInstallaties kaartlaag. (met meer detailinformetie op installatie-niveau).
+
+!Actualiteit
+Gegevens bijgewerkt t/m 2024. 
+
+!Attributen
+
+    &lt;table id=&quot;SDE_Warmte_Attributen&quot; class=&quot;collapse table table-striped table-hover table-sm&quot;&gt;
+			&lt;thead&gt;
+		&lt;tr&gt;
+        		&lt;th&gt;Attribuut&lt;/th&gt;
+        		&lt;th&gt;Waarde&lt;/th&gt;
+		        &lt;th&gt;Eenheid&lt;/th&gt;
+		&lt;/tr&gt;
+		    &lt;/thead&gt;
+    		&lt;tbody&gt;
+		&lt;tr&gt;
+		        &lt;td&gt;Type Installatie&lt;/td&gt;
+ 		        &lt;td&gt;[LCP]&lt;/td&gt;
+ 		        &lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		        &lt;td&gt;National Identity code&lt;/td&gt;
+ 		        &lt;td&gt;[NIC]&lt;/td&gt;
+ 		        &lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		     &lt;tr&gt;
+		       &lt;td&gt;SBI code (vorige versie)&lt;/td&gt;
+ 		       &lt;td&gt;[SBI_code]&lt;/td&gt;
+ 		       &lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		        &lt;td&gt;SBI naam&lt;/td&gt;
+ 		        &lt;td&gt;[SBI]&lt;/td&gt;
+ 		        &lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Sector&lt;/td&gt;
+ 		       &lt;td&gt;[SECTOR]&lt;/td&gt;
+ 		       &lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;			
+		&lt;tr&gt;
+			&lt;td&gt;TJ Warmte (berekend)&lt;/td&gt;
+ 		       &lt;td&gt;[TJ_Warmte]&lt;/td&gt;
+ 		       &lt;td&gt;TJ&lt;/td&gt;
+		&lt;/tr&gt;			
+		&lt;tr&gt;
+		        &lt;td&gt;EMISSIES&lt;/td&gt;
+ 		        &lt;td&gt;&lt;/td&gt;
+ 		        &lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		       &lt;td&gt;CO2 emissies 2024&lt;/td&gt;
+ 		       &lt;td&gt;[kton2024]&lt;/td&gt;
+ 		       &lt;td&gt;kton/jaar&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		       &lt;td&gt;CO2 emissies 2023&lt;/td&gt;
+ 		       &lt;td&gt;[kton2023]&lt;/td&gt;
+ 		       &lt;td&gt;kton/jaar&lt;/td&gt;
+ 		&lt;/tr&gt;
+ 		&lt;tr&gt;
+ 		       &lt;td&gt;CO2 emissies 2022&lt;/td&gt;
+		       &lt;td&gt;[kton2022]&lt;/td&gt;
+		       &lt;td&gt;kton/jaar&lt;/td&gt;
+ 		&lt;/tr&gt;
+ 		&lt;tr&gt;
+		       &lt;td&gt;CO2 emissies 2021&lt;/td&gt;
+		       &lt;td&gt;[kton2021]&lt;/td&gt;
+		       &lt;td&gt;kton/jaar&lt;/td&gt;
+ 		&lt;/tr&gt;
+		&lt;tr&gt;
+		       &lt;td&gt;CO2 emissies 2020&lt;/td&gt;
+ 		       &lt;td&gt;[kton2020]&lt;/td&gt;
+ 		       &lt;td&gt;kton/jaar&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+ 		       &lt;td&gt;CO2 emissies 2015&lt;/td&gt;
+ 		       &lt;td&gt;[kton2015]&lt;/td&gt;
+ 		       &lt;td&gt;kton/jaar&lt;/td&gt;
+ 		&lt;/tr&gt;
+ 		&lt;tr&gt;
+ 		       &lt;td&gt;CO2 emissies 2010&lt;/td&gt;
+ 		       &lt;td&gt;[kton2010]&lt;/td&gt;
+ 		       &lt;td&gt;kton/jaar&lt;/td&gt;
+ 		&lt;/tr&gt;
+ 		&lt;tr&gt;
+		       &lt;td&gt;CO2 emissies 2005&lt;/td&gt;
+		       &lt;td&gt;[kton2005]&lt;/td&gt;
+		       &lt;td&gt;kton/jaar&lt;/td&gt;
+		&lt;/tr&gt;
+ 		&lt;tr&gt;
+		       &lt;td&gt;CO2 emissies 2000&lt;/td&gt;
+		       &lt;td&gt;[kton2000]&lt;/td&gt;
+ 		       &lt;td&gt;kton/jaar&lt;/td&gt;
+ 		&lt;/tr&gt;
+ 		&lt;tr&gt;
+		       &lt;td&gt;CO2 emissies 1990&lt;/td&gt;
+		       &lt;td&gt;[kton1990]&lt;/td&gt;
+		       &lt;td&gt;kton/jaar&lt;/td&gt;
+ 		&lt;/tr&gt;
+    		&lt;/tbody&gt;
+    &lt;/table&gt;
+
+</pre>
 </div>
-<div created="20210323140706317" creator="RVO" modified="20260512142309727" modifier="RVO" tags="Industrie EnergieEmissie" title="CO2emissieETSbedrijven">
+<div created="20210323140706317" creator="RVO" modified="20260529192743097" modifier="RVO" tags="Industrie EnergieEmissie" title="CO2emissieETSbedrijven">
 <pre>! Beschrijving
 Overzicht van de ETS-plichtige bedrijven. De tabel toont de CO2-emissie in kton. Bron NEA-gegevens
 
@@ -11673,7 +11780,7 @@ gegevens van 2013 t/m/2025
 
 !Attributen
 
-    &lt;table id=&quot;SDE_Warmte_Attributen&quot; class=&quot;collapse table table-striped table-hover table-sm&quot;&gt;
+    &lt;table id=&quot;ETS_Attributen&quot; class=&quot;collapse table table-striped table-hover table-sm&quot;&gt;
 	 &lt;thead&gt;
 	  &lt;tr&gt;&lt;td&gt;Attribuut&lt;/td&gt;
   	         &lt;td&gt;Waarde&lt;/td&gt;
@@ -15894,12 +16001,13 @@ Deze laag was in eerste aanleg gemaakt om de voortgang van het opstellen van de 
 
 zie: TransitieVisieWarmte database pagina</pre>
 </div>
-<div created="20220114122749574" creator="RVO" modified="20260512141828584" modifier="RVO" tags="Inhoud" title="Updates">
+<div created="20220114122749574" creator="RVO" modified="20260529194611098" modifier="RVO" tags="Inhoud" title="Updates">
 <pre>!Toelichting
 Overzicht van bijgewerkte datasets. De laatst bijgewerkte dataset staat bovenaan in de lijst. 
 
 |Laagnaam|Actualiteit gegevens|Update date|Opmerking|
 |[[CO2emissieETSbedrijven]] |2013-2025|mei 2026||
+|[[CO2emissieBedrijven]] |2000-2024|mei 2026||
 |[[GroteStookInstallaties]] |2017-2024|mei 2026||
 |[[WarmtenettenInOntwikkeling]] |dec-2024|mei 2026|kaartlaag nog niet volledig|
 |[[WarmteNetten]] |2024|jan 2026|CBS voorlopige data; beschikbaar als wfs-service |
